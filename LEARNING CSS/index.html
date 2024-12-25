@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAMPLE FORM IN HTML TO LEARN CSS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        id="logo"
+        src="https://imgs.search.brave.com/avWAkmWn17jd8tmp2K_WY-H62n27YkKZ-6flKypMAlU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuaGluZHVzdGFu/dGltZXMuY29tL3Jm/L2ltYWdlX3NpemVf/NjMweDM1NC9IVC9w/Mi8yMDE3LzEyLzE4/L1BpY3R1cmVzL19k/YTAzMDhkYy1lM2Q5/LTExZTctYjA5NC1j/MjFmODJiNjBiMGIu/anBn"
+        alt="CISCE LOGO"
+        height="200"
+        width="300"
+      />
+      <div class="headings">
+        <h1 id="main_heading">
+          COUNCIL FOR INDIAN SCHOOL CERTIFICATE EXAMINATIONS (CISCE), NEW DELHI
+        </h1>
+        <h2 id="secondary_main_heading">
+          ADMISSION FORM FOR ADMISSION INTO VARIOUS STREAMS IN THE HIGHER
+          SECONDARY SECTION (FOR AY 2024-25)
+        </h2>
+      </div>
+      <div class="form_parent">
+        <div class="form_child">
+          <form action="response_page.html">
+            <div>
+              ENTER YOUR FULL NAME <br /><br />
+              <label for="name">
+                <input
+                  required
+                  type="text"
+                  name="name"
+                  placeholder="ENTER YOUR NAME HERE"
+                />
+              </label>
+            </div>
+            <br />
+            <div>
+              ENTER YOUR CURRENT AGE<br /><br />
+              <label for="age">
+                <input
+                  required
+                  type="number"
+                  name="age"
+                  min="0"
+                  max="18"
+                  placeholder="age (must be between 0 to 18)"
+                />
+              </label>
+            </div>
+            <br />
+            SELECT THE COURSE YOU WANT TO ENROLL<br /><br />
+            <div>
+              <label for="classX">
+                <input
+                  required
+                  type="radio"
+                  name="class"
+                  id="classX"
+                  class="class"
+                />ICSE CLASS X
+              </label>
+            </div>
+            <br />
+            <div>
+              <label for="classXII">
+                <input
+                  required
+                  type="radio"
+                  name="class"
+                  id="classXII"
+                  class="class"
+                />ISC CLASS XII
+              </label>
+            </div>
+            <br />
+            CHOOSE THE DESIRED STREAM FROM THE DROP-DOWN
+            <div>
+              <label for="stream">
+                <select required name="select_stream" id="select01">
+                  <option value="SCIENCE">SCIENCE</option>
+                  <option value="COMMERECE">COMMERECE</option>
+                  <option value="ARTS">ARTS</option>
+                </select>
+              </label>
+            </div>
+            <br />
+            NOW SELECT THE DESIRED SUBJECTS FROM THE LIST OF OFFERED SUBJECTS
+            <div>
+              <label area required for="subjects">
+                <label for="physics">
+                  <input
+                    type="checkbox"
+                    name="subjects"
+                    class="subs"
+                    id="phy"
+                  />
+                  PHYSICS </label
+                ><br />
+                <label for="chemistry">
+                  <input
+                    type="checkbox"
+                    name="subjects"
+                    class="subs"
+                    id="chem"
+                  />
+                  CHEMISTRY </label
+                ><br />
+                <label for="maths">
+                  <input
+                    type="checkbox"
+                    name="subjects"
+                    class="subs"
+                    id="maths"
+                  />
+                  MATHS </label
+                ><br />
+                <label for="computers">
+                  <input
+                    type="checkbox"
+                    name="subjects"
+                    class="subs"
+                    id="comp"
+                  />
+                  COMPUTER SCIENCE </label
+                ><br />
+                <label for="commerece">
+                  <input
+                    type="checkbox"
+                    name="subjects"
+                    class="subs"
+                    id="comm"
+                  />
+                  COMMERECE </label
+                ><br />
+                <label for="accounts">
+                  <input
+                    type="checkbox"
+                    name="subjects"
+                    class="subs"
+                    id="acc"
+                  />
+                  ACCOUNTS </label
+                ><br />
+                <label for="history">
+                  <input
+                    type="checkbox"
+                    name="subjects"
+                    class="subs"
+                    id="his"
+                  />
+                  HISTORY </label
+                ><br />
+                <label for="civics">
+                  <input
+                    type="checkbox"
+                    name="subjects"
+                    class="subs"
+                    id="civics"
+                  />
+                  CIVICS </label
+                ><br />
+                <label for="literature">
+                  <input
+                    type="checkbox"
+                    name="subjects"
+                    class="subs"
+                    id="lit"
+                  />
+                  LITERATURE </label
+                ><br />
+                <label for="psychology">
+                  <input
+                    type="checkbox"
+                    name="subjects"
+                    class="subs"
+                    id="phys"
+                  />
+                  PSYCHOLOGY </label
+                ><br />
+                <label for="music">
+                  <input
+                    type="checkbox"
+                    name="subjects"
+                    class="subs"
+                    id="music"
+                  />
+                  INDIAN CLASSICAL MUSIC
+                </label>
+              </label>
+            </div>
+            <br /><br /><br />
+            <div>
+              <label for="submit">
+                <input type="submit" class="submit_button" />
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>

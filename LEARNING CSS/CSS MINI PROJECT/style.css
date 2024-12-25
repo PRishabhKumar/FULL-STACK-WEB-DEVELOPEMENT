@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdZMpmDxBq0hNMxhaNUgy5HOJ1a5DG6_IPcg&s");
+  background-size: cover;
+}
+
+.button_one {
+  color: white;
+  line-height: 30px;
+}
+
+#menu_icon {
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.sidebar_menu .button_two {
+  color: white;
+}
+
+#close_icon {
+  font-weight: bolder;
+  font-size: 25px;
+  opacity: 1;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.sidebar_menu {
+  position: fixed;
+  left: -300px;
+  height: 100vh;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0, 0, 6px, rgba(255, 255, 255, 0.5);
+  transition: transform, 2s, 0.5s;
+}
+
+.sidebar_menu .logo {
+  height: 60px;
+  position: absolute;
+  width: 100%;
+  line-height: 60px;
+  box-shadow: 0, 0, 4px rgba(255, 255, 255, 0.5);
+}
+
+.sidebar_menu .logo a {
+  position: absolute;
+  left: 50px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.sidebar_menu .button_two {
+  position: absolute;
+  left: 200px;
+  font-size: 10px;
+  line-height: 60px;
+  color: gray;
+}
+
+.sidebar_menu .menu {
+  position: absolute;
+  width: 100%;
+  top: 80px;
+  color: white;
+}
+
+.sidebar_menu .menu li {
+  margin-top: 5px;
+  padding: 10px 20px;
+  color: white;
+}
+
+.sidebar_menu .menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.sidebar_menu .social_media {
+  position: absolute;
+  left: 25%;
+  bottom: 100px;
+}
+
+.sidebar_menu .social_media i {
+  padding: 5px;
+  color: white;
+  opacity: 0.5;
+}
+
+#check {
+  display: none;
+}
+
+.sidebar_menu .menu li:hover {
+  box-shadow: 0, 0, 4px rgba(226, 125, 191, 0.5);
+}
+
+.button_one {
+  cursor: pointer;
+}
+
+.sidebar_menu .button_two {
+  cursor: pointer;
+}
+
+.sidebar_menu .social_media i:hover {
+  opacity: 1;
+  transform: scale(1.5);
+}
+
+#check:checked ~ .sidebar_menu {
+  /*the '~' sign is used to select any of it's sibling elements*/
+  left: 0px;
+}
+
+#check:checked ~ .button_one {
+  opacity: 1;
+}

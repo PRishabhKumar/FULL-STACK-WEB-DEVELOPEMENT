@@ -1,0 +1,167 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+  overflow: hidden;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+}
+
+/* .sidebar {
+  width: 340px;
+  background-color: black;
+  color: white;
+  border-radius: 1rem; /*1rem = 16px on the browser window
+} */
+
+.main_content {
+  background-color: red;
+  color: white;
+  flex: 1; 
+  /* this is used to make the main-content div to take the full width left after the side bar div */
+  border-radius: 1rem;
+  overflow: auto; /*this will show the scroll bar only when needed*/
+}
+
+.music_player {
+  background-color: black;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 72px;
+}
+
+.nav {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  background-color: #121212;
+  border-radius: 1rem;
+  justify-content: center;
+  padding: 0.75rem, 0.75rem;
+  transition: transform 2s;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.nav i {
+  color: white;
+}
+
+.home_button i {
+  font-size: 1.25rem;
+}
+
+.home_button a {
+  font-size: 1rem;
+}
+
+.search_button i {
+  font-size: 1.25rem;
+}
+
+.search_button a {
+  font-size: 1rem;
+}
+
+.home_button {
+  padding: 0.5rem;
+  line-height: 40px;
+  opacity: 1;
+}
+
+.search_button {
+  padding: 0.5rem;
+  line-height: 40px;
+  opacity: 0.5;
+}
+
+.search_button:hover {
+  opacity: 1;
+}
+
+.library {
+  height: 100%;
+  background-color: #121212;
+  border-radius: 1rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.library_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.your_library {
+  display: flex;
+  opacity: 0.5;
+}
+
+.your_library_icon {
+  margin-right: 1rem;
+}
+
+.your_library_link a {
+  font-size: 1.25rem;
+}
+
+.your_library:hover {
+  opacity: 1;
+}
+
+.your_library a {
+  color: white;
+  text-decoration: none;
+}
+
+.your_library img {
+  position: relative;
+  height: 1.25rem;
+  width: 1.25rem;
+  left: 5px;
+  top: 2px;
+}
+
+.library_icons {
+  display: flex;
+  font-size: 1.25rem;
+  margin-right: 1rem;
+}
+
+.plus {
+  opacity: 0.5;
+}
+
+.right_arrow {
+  opacity: 0.5;
+}
+
+.plus:hover {
+  opacity: 1;
+}
+
+.library_icons i {
+  color: white;
+}
+
+.right_arrow:hover {
+  opacity: 1;
+}
+
+.plus {
+  margin-right: 1.5rem;
+}

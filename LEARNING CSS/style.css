@@ -1,0 +1,37 @@
+body{
+    background-image: url("https://imgs.search.brave.com/S8VKGDaF-7et-D72AJOEFZGn_STfV81tKh2L6Gs9P40/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNDUz/MDMzNTExL3Bob3Rv/L2J1c2luZXNzLWRp/c3RyaWN0LWluLWxv/bmRvbi5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9UGY5dnNv/LXR1MW1fUUE4R0h0/RXlXNFNteU5DOTA0/RXdTN3FvVzhZMEdT/TT0");
+    background-size: cover;
+}
+#main_heading {
+  text-align: center;
+}
+
+#secondary_main_heading {
+  text-align: center;
+}
+
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.headings{
+    background-color: white;
+    transition-property: all;
+}
+
+.form_parent{
+    height: 100vh;
+    width : 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_child{
+    height: auto;
+    width: 500px;
+    background-color: white;
+    
+}

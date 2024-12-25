@@ -1,0 +1,17 @@
+body{
+    background-color: green;
+}
+
+img{
+    display: block;
+    margin: auto;
+    margin-top: 10%;
+    height: 400px;
+    width: 400px;
+}
+
+.submitted{
+    text-align: center;
+    color: white;
+    font-size:xx-large;
+}

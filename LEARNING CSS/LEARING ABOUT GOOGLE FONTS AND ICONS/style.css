@@ -1,0 +1,18 @@
+h1 {
+  text-align: center;
+  background-color: #1b74e4;
+  color: white;
+  font-weight: bolder;
+}
+
+#first {
+  font-family: "Gloria Hallelujah", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#second {
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  font-style: normal;
+}

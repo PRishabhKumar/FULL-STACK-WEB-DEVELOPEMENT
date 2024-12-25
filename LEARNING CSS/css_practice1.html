@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS PRACTICE 1</title>
+    <link rel="stylesheet" href="css_practice_styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Facebook</h1>
+    </header>
+    <main>
+      <button class="login_and_register_buttons" id="login_button">
+        Log In
+      </button>
+      <button class="login_and_register_buttons" id="register_button">
+        Register</button
+      ><br /><br />
+      <label for="search_box">
+        Search
+        <input
+          type="text"
+          id="search_box"
+          class="search"
+          placeholder="search your friends"
+        />
+      </label>
+      <button id="search_button">Search</button
+      ><br /><br /><br /><br /><br /><br /><br /><br />
+
+      <h1 id="intro_para">
+        <big><b>NOW WE WILL SEE THE USE OF DESCENDANT SELECORS IN CSS</b></big>
+      </h1>
+      <div class="info_about_descendant_selectors">
+        <p>
+          <big
+            ><b
+              >DESCENDANT SELECTORS ARE USED TO APPLY STYLING TO ANY ELEMENTS
+              THAT FALL UNDER SOME OTHER ELEMENT IN THE HIERARCHY.<br />
+              FOR EXAMPLE, IF WE WISH TO APPLY STYLING TO ALL THE PARAGRPAHS
+              INSIDE OF A DIV OR TO ALL THE ANCHOR TAGS INSIDE OF A PARAGRPAH OR
+              DIV THEN WE CAN MAKE USE OF THE DESCENDANT SELECTORS</b
+            ></big
+          >
+        </p>
+      </div>
+      <h1 class="selector_headings">
+        <big><b>EXAMPLE 1</b></big>
+      </h1>
+      <h2 style="text-align: center">
+        HERE WE WILL CREATE A FEW DIVS EACH WITH 2 TO 3 PARAGRAPHS AND APPLY
+        DIFFERENT STYLING TO ALL THE DIVS
+      </h2>
+      <h3 style="text-align: center; font-size: larger">
+        <big><b>DIV NUMBER 1</b></big>
+      </h3>
+      <div class="descendant_selector_example1_div1">
+        <h3 style="text-align: center; font-size: larger">PARA 1</h3>
+        <p>
+          <big><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni rerum facilis quidem deleniti quod, neque labore unde quae consequatur itaque quisquam corporis tempore aperiam velit non. Similique commodi enim dicta.
+          Asperiores itaque expedita sed accusantium eum ullam laboriosam odit autem quos recusandae! Quod non voluptatibus aliquam quaerat sunt ipsam culpa? Adipisci impedit, sed voluptates facilis distinctio quo voluptate odit eos!
+          Quasi voluptates fuga incidunt sit mollitia dolores dolorem veniam distinctio, necessitatibus ratione perferendis praesentium itaque optio accusantium quisquam, ad voluptatibus numquam voluptatem! Fugiat ipsum officiis et natus enim? Vitae, quisquam.
+          Inventore, quod laudantium dignissimos facilis autem voluptatem dolorum obcaecati quae expedita fugiat, illum assumenda voluptate repellendus aperiam, quidem fuga sequi? Quas consectetur iusto laudantium velit doloremque distinctio odit maxime quasi?
+          Quaerat aspernatur, cum assumenda amet reiciendis excepturi dignissimos doloremque voluptates sint nostrum. Fugiat, nemo? Qui praesentium beatae error animi, placeat quaerat quam amet aut perferendis officia natus sit quibusdam. Nisi!</b></big>
+        </p>
+        <br /><br />
+        <h3 style="text-align: center; font-size: larger">PARA 2</h3>
+        <p>
+          <big><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet similique nam facilis temporibus vel in debitis quam optio at dignissimos, sit soluta et minima repudiandae quia nemo ab beatae id?
+          Quibusdam, cupiditate modi? Optio distinctio itaque ducimus alias, illum error sint pariatur officia quos numquam harum. Quas facere exercitationem excepturi, error sapiente iste illo aperiam quis. Est tempore ad beatae!
+          Cum dolore, voluptas iure eum, porro neque ipsum doloribus quia ipsa veritatis quo consequatur ea totam! Ab ipsam consectetur deserunt, laborum, animi saepe sint dolorum, soluta eveniet atque quos tempore?
+          Sequi, alias quis blanditiis temporibus voluptates, dignissimos dolorum animi numquam magnam dicta laboriosam totam! Sed consectetur eius, neque consequatur, non repellat quis atque quidem nemo veritatis alias maiores ratione odit!
+          Possimus quam eaque tenetur reiciendis hic aliquid omnis placeat similique nobis. Quod adipisci dolorum ex quae, consectetur sit veniam nulla ad dignissimos nam autem repellat expedita atque tempora temporibus exercitationem.</b></big>
+        </p>
+        <br /><br />
+        <h3 style="text-align: center; font-size: larger">PARA 3</h3>
+        <p>
+          <big><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, illo quasi debitis voluptatum iure ab quod earum tenetur repudiandae vitae, rerum sunt autem veniam doloremque maiores temporibus facilis perferendis iste?
+          Eum a quo neque magnam quasi vitae excepturi sapiente quos illo ex ipsum aperiam dolorem nesciunt dicta ullam dolore quod, aspernatur, non sed qui. Maiores porro sint laborum numquam architecto!
+          Consequatur quam mollitia architecto laborum eum odio, perferendis sit? Soluta accusamus veniam eligendi deleniti, porro tempore sed laboriosam eius consequatur non odit, quaerat eaque repudiandae earum iure dolorum voluptate. Doloribus?
+          Sit illo, beatae vitae aliquam voluptatibus cumque voluptatum vel voluptate fugiat laboriosam doloribus expedita recusandae! Voluptate incidunt fugit, nihil veniam cupiditate eius commodi soluta architecto neque, reiciendis voluptatem earum voluptatibus.
+          Asperiores sapiente magni recusandae, iste cumque ad inventore, perspiciatis neque, cupiditate non id! Sed facilis laboriosam nulla sequi, dolores nesciunt neque sit deleniti sapiente velit autem possimus harum unde eos.</b></big>
+        </p>
+        <br /><br />
+      </div><br><br>
+      <h3 style="text-align: center; font-size: larger">
+        <big><b>DIV NUMBER 2</b></big>
+      </h3><br>
+      <div class="descendant_selector_example1_div2">
+        <h3 style="text-align: center; font-size: larger">PARA 1</h3>
+        <p><big><b>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos itaque quae iste, ducimus iusto rem ratione! Excepturi non, molestiae sequi officia aliquam nesciunt, voluptate reiciendis iure quasi, veritatis nam sit.
+        Corrupti iusto ea, alias iure in aliquam fugit, corporis at ut excepturi, est totam. Illum possimus voluptatibus magnam aperiam consequuntur quaerat praesentium iste! Perferendis ullam minima dolorum repudiandae? Hic, doloribus.
+        Reprehenderit corporis consequuntur sint facere aliquam alias natus cum dolor laboriosam fuga nihil ducimus, impedit ipsam nisi recusandae, assumenda quisquam sapiente quos magnam veritatis consectetur animi. Pariatur corrupti laboriosam quas?
+        Repellendus perspiciatis adipisci, natus vel quod quos veniam incidunt similique illum libero quas velit, consequuntur eligendi doloribus consectetur fuga? Ullam magnam totam ex unde numquam ratione saepe molestiae culpa odit.
+        Laborum officiis obcaecati reiciendis voluptas quisquam minus beatae. Autem ratione quis animi reiciendis hic temporibus sint. Numquam, odio omnis doloribus vel ab fugit provident obcaecati quae corporis sit perspiciatis officia.</b></big></p>
+        <br><br>
+        <h3 style="text-align: center; font-size: larger">PARA 2</h3>
+        <p><big><b>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni aperiam excepturi fugiat commodi vero nam eius itaque, officia rerum exercitationem, ex, magnam qui debitis? Labore ea temporibus harum ducimus sed.
+        Veritatis beatae quae a corporis sunt? Explicabo nulla ducimus aperiam, aut nihil deleniti eos blanditiis beatae reiciendis rem molestiae id non ea aspernatur iste, quaerat maxime sunt perferendis asperiores natus.
+        Aut quis blanditiis dolores ullam labore voluptate eos ipsum assumenda perferendis aperiam! Culpa iusto soluta esse fugiat natus nihil aspernatur cumque nobis veniam dolorum magnam quas reprehenderit assumenda, tenetur fuga.
+        Totam quidem esse ab impedit, expedita quae reiciendis delectus dolores fugiat maxime officia itaque quia sunt nam, consequatur autem inventore aut sed enim dignissimos consectetur blanditiis! Aliquam esse aliquid iure?
+        Fuga iste suscipit dicta vero aliquid sunt eos aliquam incidunt tempore laudantium consectetur harum perferendis, nesciunt eaque tenetur debitis, dolor dolore distinctio quisquam. Natus aliquam obcaecati, corporis amet et magni!</b></big></p>
+        <br><br>
+        <h3 style="text-align: center; font-size: larger">PARA 3</h3>
+        <p><big><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam necessitatibus quia officiis accusantium culpa nisi laborum sunt quaerat repudiandae eum odit assumenda, obcaecati cupiditate quod expedita veritatis quo, distinctio corporis?
+        Nisi delectus aliquid sit maiores corrupti fugit in nemo non dolorum sequi, a facere porro aspernatur unde deleniti, architecto, vitae provident. Odit minus deleniti, dolore perspiciatis aut molestias quasi amet.
+        Ex, voluptas! Quas odit, nesciunt tenetur soluta accusantium quae provident ipsa dignissimos minima officiis fugiat autem, ea dolor commodi eveniet corrupti! Unde dolores id quam incidunt! Ratione odit iure suscipit.
+        Qui quae libero ut soluta fugit quam necessitatibus incidunt earum, temporibus doloremque. Rem, est debitis veritatis delectus hic aliquid voluptatum praesentium labore, ullam nemo architecto laborum porro sunt natus fugit.
+        Fuga, sed ea ipsum omnis accusamus in quae cupiditate voluptatibus atque ex excepturi harum aut similique nihil tenetur qui facere provident tempore? Distinctio suscipit molestias magni debitis, consequatur veniam mollitia.</b></big></p>
+        <br><br>
+      </div><br><br>
+      <h3 style="text-align: center; font-size: larger">
+        <big><b>DIV NUMBER 3</b></big>
+      </h3><br>
+      <div class="descendant_selector_example1_div3">
+        <h3 style="text-align: center; font-size: larger">PARA 1</h3>
+        <p><big><b>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel saepe maiores unde sequi aliquid aut eaque soluta quibusdam perferendis eos. Veniam a natus excepturi doloribus, ut nulla amet saepe nisi?
+        Mollitia fugit odit praesentium nam est eveniet pariatur eum! Qui vero officia labore id nam ab vitae quos cupiditate atque autem, assumenda dolorem ratione nihil voluptas voluptatem velit? Ratione, aperiam?
+        Maxime vero quas ipsam officia velit? Molestiae, ipsum nam, consequuntur repellat at maxime quae sunt, tenetur accusantium quis nobis quasi rem amet! Tempora sint ipsa iusto, facere quas aliquid est?
+        Animi voluptatem possimus architecto adipisci officia aperiam, ipsam recusandae. Eum labore, nesciunt dignissimos, illo nemo ullam sequi exercitationem ea quas odit natus eaque ad dolorem ipsum facilis iure. Necessitatibus, suscipit.
+        Sint amet ab maxime illo ipsum? Nesciunt atque assumenda modi debitis delectus qui at facere nulla ab eligendi quia tempore minus asperiores, quidem id quas eaque fuga mollitia perferendis ducimus?</b></big></p>
+        <br><br>
+        <h3 style="text-align: center; font-size: larger">PARA 2</h3>
+        <p><big><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nisi consequatur tempore sed. Nesciunt dolores vitae aspernatur voluptatum minus, fuga et! Cupiditate ullam tempore nisi ad illum unde ex consequatur!
+        Ex temporibus maxime, voluptates quaerat possimus reiciendis totam enim earum culpa ipsa ipsum distinctio magni dolorum atque recusandae voluptatum vel amet cumque cupiditate omnis aperiam! Veritatis quasi vitae aliquid rerum.
+        Quas debitis explicabo magni perferendis aliquid nam asperiores nisi impedit nostrum dolor. Qui assumenda quod delectus quas error, illo sunt magni, laboriosam minus nostrum magnam aliquid? Maiores ipsum earum commodi!
+        Iste enim omnis sunt provident laborum. Aperiam unde excepturi mollitia vitae, repellat nisi pariatur doloremque! Natus fugit vel dolore voluptatibus officiis, aut praesentium ipsum alias numquam, tempora repudiandae temporibus reiciendis.
+        Nostrum aliquam eaque dolores ullam neque, magnam soluta beatae suscipit ipsum laboriosam, consequatur pariatur temporibus eum. Delectus veritatis, ea velit asperiores animi culpa. Eveniet pariatur placeat magni saepe quo blanditiis?</b></big></p>
+        <br><br>
+        <h3 style="text-align: center; font-size: larger">PARA 3</h3>
+        <p><big><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, labore. Corporis doloremque cupiditate quos nemo. Excepturi veniam nisi delectus vero ab maiores quam voluptatem, deleniti sequi, adipisci nam eius laboriosam!
+        Ullam necessitatibus voluptatibus facere nemo repellendus dolor ipsum illum laborum dolore sit? Pariatur excepturi, alias laboriosam vitae necessitatibus quae expedita possimus deserunt consectetur, sed veniam aut consequatur asperiores eligendi nemo.
+        Iure rerum doloribus perspiciatis doloremque, facilis officiis perferendis commodi voluptatum similique illo accusantium dolor quisquam tempora ipsam odio incidunt atque praesentium dicta quibusdam, harum non quidem alias ea totam. Quos!
+        Cumque a ex inventore sed vitae consequatur cupiditate, ratione aspernatur, quod voluptate deleniti, rem sint! Hic repellendus optio animi sint iusto quasi voluptatum exercitationem. Dolorem nulla nesciunt eos officiis commodi?
+        Praesentium dolor vel dicta, ratione saepe eos? Iusto quisquam nisi soluta officia facere. Non facere quia alias ut odit? Unde optio dignissimos consequuntur dolorum laboriosam id expedita iste quam a?</b></big></p>
+        <br><br>
+      </div>
+      <h1 style="text-align: center;">EXAMPLE 2</h1>
+      <h2 style="text-align: center">HERE WE WILL CREATE A FEW PARAGRAPHS AND THEN APPLY STYLING ON THE ANCHOR TAGS IN THEM </h2><br>
+      <h3 style="text-align: center; font-size: larger">
+        <big><b>PARAGRPAH NUMBER 1</b></big>
+      </h3><br>
+      <p id="paragraph_number1" style="text-align: center;"><big><b>ARTICLE : <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quis fuga officia eum possimus? Facere omnis veniam officiis beatae saepe! Sequi, animi placeat. Porro assumenda vel commodi quae pariatur! Beatae.
+        Quibusdam rem dignissimos a impedit fuga tenetur cumque illum, sint vero saepe harum eligendi iusto perferendis natus officiis explicabo maiores consequatur error mollitia et sapiente. Omnis soluta reprehenderit ab enim.
+        Beatae, perferendis quas officiis iure magni nam, doloremque earum quaerat et minus nostrum recusandae cupiditate praesentium, assumenda quae expedita corrupti labore! Tenetur atque error quas consectetur ullam culpa reprehenderit quod.
+        Minima, earum quibusdam a illum itaque cupiditate non quas veritatis? Consectetur eos in aliquid iure cumque dolorem aspernatur dolor eius rem, corporis animi tempora molestias quaerat reiciendis quasi optio corrupti!
+        Repudiandae voluptates accusamus veritatis tempore necessitatibus id tenetur sed. Dicta iure porro quam perspiciatis exercitationem sit eveniet sunt adipisci veritatis velit amet asperiores dignissimos voluptatem, recusandae alias repudiandae esse reiciendis.</br><br><br>
+        TO KNOW MORE ABOUT THIS ARTICLE FOLLOW US ON SOCIAL MEDIA : <BR>
+            <a href="https:\\www.facebook.com" target="_main">Facebook</a><br>
+            <a href="https:\\www.instagram.com" target="_main">Instagram</a><br>
+            <a href="https:\\www.linkedin.com" target="_main">LinkedIn</a></big></p><br>
+      <h3 style="text-align: center; font-size: larger">
+        <big><b>PARAGRPAH NUMBER 2</b></big><br><br></h3>
+        <p id="paragraph_number_2" style="text-align: center;"><big><b>ARTICLE : <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, consequuntur sunt soluta reprehenderit modi excepturi totam velit dolor tempora aperiam deleniti neque odit illum earum praesentium debitis laudantium deserunt laboriosam.
+        Ipsa eos iste quas eaque itaque mollitia, error quo hic dolorem! Sint consequatur ad veniam neque cumque maxime, suscipit officia eius ducimus hic. Adipisci consectetur expedita ea odio, suscipit voluptatum!
+        Minima deserunt praesentium voluptate atque qui voluptatum deleniti perspiciatis. Nostrum minus odio natus totam asperiores suscipit voluptatibus. Adipisci ratione sapiente fugit, corporis quibusdam eligendi minus cum numquam rerum officiis molestiae.
+        Fugiat repudiandae asperiores, cum, cumque necessitatibus repellat ullam quod rem eligendi, assumenda minus atque a ut. Iusto dignissimos cum quam, commodi a cumque dolorem? Non debitis iusto assumenda culpa temporibus!
+        Iste quod, consequuntur repellat debitis delectus, laboriosam vel quae reiciendis doloribus corporis rem sequi dolorum. Id, voluptatibus. Minus, quisquam deleniti iure quaerat animi numquam consectetur, accusantium cumque voluptatum porro consequuntur!</br><br><br>
+        TO KNOW MORE ABOUT THIS ARTICLE FOLLOW US ON SOCIAL MEDIA : <BR>
+            <a href="https:\\www.facebook.com" target="_main">Facebook</a><br>
+            <a href="https:\\www.instagram.com" target="_main">Instagram</a><br>
+            <a href="https:\\www.linkedin.com" target="_main">LinkedIn</a></big></p><br>      
+      <h3 style="text-align: center; font-size: larger">
+        <big><b>PARAGRPAH NUMBER 3</b></big></h3><br>
+      <p id="paragraph_number_3" style="text-align: center;"><big><b>ARTICLE : <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptatem sint perferendis dolorum esse iusto, est ratione ipsam autem expedita officiis! Dicta sunt dolore eius distinctio iusto tempora eveniet porro.
+      Praesentium voluptate quos, voluptatem error omnis exercitationem ipsum dolor culpa maiores, sequi sint voluptates quam fugit nulla et. Voluptate commodi quo maiores eos a error tempora hic, facere exercitationem assumenda?
+      Facere adipisci distinctio totam, voluptatem illum reiciendis dolorem enim illo laudantium ipsam omnis iste possimus dolorum. Dolor porro adipisci autem blanditiis natus sunt, minus similique, voluptatem eveniet facilis temporibus fugiat!
+      Sapiente enim esse hic inventore minima, culpa, placeat nostrum earum ullam quibusdam quisquam dolor voluptas distinctio omnis iure qui repellendus sunt. Reiciendis eaque possimus ullam ab delectus enim, excepturi error!
+      Unde eos suscipit nisi possimus laboriosam ipsa consectetur eligendi architecto, accusantium assumenda fuga laborum nemo nam, velit mollitia beatae minus quia. Impedit necessitatibus dolorem minima natus optio repellendus dicta dolore?</br><BR><BR>
+    TO KNOW MORE ABOUT THIS ARTICLE FOLLOW US ON SOCIAL MEDIA : <BR>
+        <a href="https:\\www.facebook.com" target="_main">Facebook</a><br>
+        <a href="https:\\www.instagram.com" target="_main">Instagram</a><br>
+        <a href="https:\\www.linkedin.com" target="_main">LinkedIn</a>
+    </big></p><br><br>
+    <div class="intro_to_child_combinator">
+      <p><big><b>NOW WE WILL SEE ABOUT THE CHILD COMBINATOR</b></big></p>
+    </div><br><br>
+    <p style="text-align: center;"><big><b>CHILD COMBINATORS ARE USED TO ESTABLISH THE CHILD RELATIONSHIP BETWEEN TWO ELEMENTS. FOR EXAMPLE IF WE WISH TO APPLY CERTAINSTYLING TO ALL TEH PARAGRPAHS INSIDE OF A DIV THEN I CAN USE THE CHILD COMBINATOR. THE DIFFERENCE BETWEEN THE CHILD COMBINATOR AND THE DESCENDANT SELECTOR IS THAT IN THE CASE OF DESCENDANT SECLCTOR, ALL THE ELEMENTS LYING UNDER THE PARENT ELEMENT, REGARDLESS OF WHAT LEVEL, WILL GET THE STYLING AND IN CASE OF THE CHILD COMBINATOR, ONLY THOSE SPECIFIED ELEMENTS WILL GET THE STYLING WHICH ARE DIRECTLY UNDER THE PARENT ELEMENT. <br> FOR EXAMPLE, IF I WANT TO APPLY SOME STYLING TO ALL PAATGRPAHS INSDE OF A DIV, IN THIS CASE IF I USE THE DESCENDANT SELECTOR, THEN IF I HAVE, SAY ANOTHER DIV INSIDE OF A PARENT DIV AND A PARAGRAPH INSIDE OF THAT DIV OR AN UNORDERED LIST, WHOSE LIST ELEMENTS ARE PARAGRAPHS, THEN ALL SUCH PARAGRAPHS WILL THE STYLING AS ALL OF THEM ARE UNDER THE PARENT DIV; BUT IN THE CASE OF TEH CHILD COMBINATORM, ONLY THOSE PARAGRPAHS WILL GET THE STYLING WHICH LIE DIRECLTY UNDER THE PARENT DIV.</br></big></p>
+      <h1 style="text-align: center;">EXAMPLE 1</h1><br><br>
+      <P><big><b>HERE, WE WILL TAKE A DIV AS THE PARENT AND A PARAGRPAH AS THE CHILD</b></big></P>
+      <div class="child_combinator_parent_div">
+        <big><b style="font-size: larger;">THIS IS THE PARENT DIV</b></big>
+        <p style="text-align: center;"><big><b>THIS IS THE PARAGRAPH DIRECTLY INSIDE THE PARENT DIV, i.e. THE CHILD PARAGRAPH<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore repellat maxime aliquid fugiat id dolor veritatis officiis ipsam accusantium mollitia. Nihil dolorum deserunt officiis dicta. Cupiditate corrupti eos culpa dolores.
+        Explicabo ea culpa architecto optio tempora reprehenderit, voluptas fugiat, corrupti saepe minus, deserunt omnis quam voluptatem impedit magnam minima molestias eum error? Fugit voluptas quam repudiandae debitis, itaque vitae officiis?
+        Laborum architecto pariatur accusamus quidem dignissimos magni excepturi eaque explicabo dolorem? Excepturi unde quo commodi illum error! Asperiores veritatis nemo mollitia ea expedita, perferendis molestias consectetur pariatur, alias iure deleniti?
+        Ullam, quos! Quasi, magnam. Necessitatibus, quae labore inventore dolor laudantium quod numquam ullam pariatur mollitia molestiae asperiores magni dolorum quia aliquam consectetur voluptates nam totam excepturi dignissimos voluptatibus ab laboriosam.
+        Hic a est cum necessitatibus tenetur culpa accusamus quos esse, iusto nam sint iure, minus delectus similique ratione asperiores provident sunt fugit excepturi recusandae suscipit doloribus dolores doloremque? Ullam, magni.</br></big></p><br><BR>
+          <big><b>NOTE THAT ONLY THE ABOVE PARAGRPAH GETS THE APPLIED STYLING AND NOT THE PARAGRPAHS INSIDE OF THE UNORDERED LISTS</b></big>
+          <br><br>
+        <big><b>NOW WE WILL HAVE AN UNORDERED LIST WHOSE ELEMENTS ARE PARAGRAPHS</b></big>
+        <ul>
+          <li><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis repudiandae perferendis, quae eius praesentium expedita laboriosam illum consectetur nostrum rerum veniam ratione reiciendis sunt quos deserunt cum alias iure culpa.</p></li>
+          <li><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste dolorem ea itaque soluta, aspernatur provident repellat quisquam doloremque nemo nulla molestias modi porro. Harum eaque expedita quisquam laudantium, deleniti at!</p></li>
+          <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eum eius vero commodi rem culpa consequatur nostrum beatae, maxime error, saepe ipsum magnam asperiores. Nihil deleniti numquam quaerat minus amet?</p></li>
+          <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos non fugit dignissimos libero reiciendis delectus maiores pariatur omnis! Vitae nisi ratione unde rem vel corrupti accusamus asperiores deserunt modi repellendus?</p></li>
+          <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsam ratione neque culpa praesentium provident quod nulla ut quo ipsum repudiandae non, deleniti nam fugiat voluptatum perspiciatis a voluptates molestiae.</p></li>
+        </ul>
+      </div>
+      <div class="intro_to_attribute_selector">
+        <p><big><b>NOW WE WILL LOOK AT THE ATTRIBUTE SELECTOR</b></big></p>
+      </div><br><br>      
+      <p style="font-size: larger;">ATTRIBUTE SELECTOR BASICALLY HELPS YOU TO SELECT ELEMENTS TO STYLE BASED ON THE PRESENCE/ABSENCE OR EVEN THE VALUE OF A SPECIFIC ATTRIBUTE<br> FOR EXAMPLE, I CAN USE IT TO GIVE THE BACKGROUND COLOUR GREEN AND THE TEXT COLOUR WHITE TO ALL THE PARAGRPAHS WHICH ARE INSIDE OF A DIV WITH THE ID (ID HERE IS THE ATTRIBUTE) EQUAL TO MyID (THIS IS THE VALUE OF THE ATTRIBUTE) AS SHOWN BELOW</p><br><br>
+      <h2 style="text-align:center">THIS IS THE DIV WITH THE ID = "MyID"</h2><br>
+      <div id="MyID">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, nostrum? Nisi repellendus omnis ex tempore corrupti eligendi modi earum molestias quaerat veritatis officia esse ducimus dolorum, hic voluptatem ratione incidunt?
+        Error doloremque illo quidem maxime tempora ipsum voluptates veniam repudiandae odio non mollitia tenetur enim, consequatur ut saepe amet. Quos voluptatem veritatis asperiores distinctio quod autem quaerat delectus consequatur reiciendis.</p><br><br>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod ipsam dolorem eligendi aspernatur dignissimos, consequatur quaerat rerum suscipit vel facilis atque, necessitatibus pariatur! Magni dolores atque cumque quod magnam earum!
+        Aspernatur nulla aliquid error cupiditate consectetur quaerat omnis at consequuntur, est similique! Placeat enim provident dicta iure facilis labore ducimus, ex vitae laborum harum eos consequatur vero fugiat modi consectetur.</p>
+      </div>
+      <h2 style="text-align:center">THIS IS THE DIV WITH SOME OTHER ID"</h2>
+      <div id="some_other_ID">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit doloremque magnam amet, perferendis molestiae sequi explicabo! Officiis adipisci aperiam ratione deserunt voluptatem alias a harum error sed, consequatur odio nulla!
+        Laborum voluptatum, adipisci quaerat dolorum quia soluta aut ullam saepe quas debitis placeat nulla cumque a doloribus ducimus impedit at cupiditate, dolore beatae voluptatibus tempora harum numquam. Nesciunt, dolorem qui!</p>
+        <br><br>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, minima provident. Commodi fugiat quis recusandae expedita molestias laboriosam non dolorum amet laudantium, ipsa adipisci, perspiciatis praesentium iusto? Harum, sed blanditiis.
+        Aliquam libero obcaecati quos animi ad, ipsum minima ab debitis quis ducimus quo eaque inventore fuga ut qui, natus quasi mollitia sit velit ullam saepe beatae, repellat possimus! Modi, et.</p>
+      </div>
+      <h1 id="intro_to_pseudo_classes">NOW WE WILL STUDY ABOUT PSEUDO CLASSES</h1><br>
+    <div class="info_about_pseudo_classes">
+      <p><big><b>PSEUDO CLASSES ARE THE ONES WHICH HELP YOU TONAPPLY STYLING ON CERTAIN ASPECTS/STATES OF AN ELEMENT<br> FOR EXAMPLE IF WE HAVE A BUTTON, WE CAN APPLY DIFFERENT STYLING FOR WHEN THE BUTTON IS CLICKED OR HOVERED UPON ETC<br> BELOW WE HAVE SOME DEMONSTRATIONS OF THE SAME : </br></big></p>
+    </div>
+    <div class="demonstration_of_psuedo_classes">
+      <div class="parent">
+        <button id="button1"><big>HOVER ME TO SEE THE COLOUR CHANGE</big></button>
+      </div><br><br>
+      <div class="parent1">
+        <button id="button2"><big>CLICK ON ME TO SEE THE COLOUR CHANGE</big></button>
+      </div>
+      <p style="font-size: larger;font-weight: bolder"><big><b>NOW WE WILL SOME EFFECTS ON TEXTUAL ELEMENTS</b></big></p>
+      <br><br>
+      <p id="psuedo_class_para1"><big><b>DID YOU KNOW THAT IF YOU HOVER OVER ME MY FONT SIZE WILL INCREASE AND ALSO BACKGROUND AND TEXT COLOURS WILL CHANGE !!!<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique iste vitae atque quia dolore, rerum tenetur, harum odio voluptatum est vero perferendis eius maiores? Eveniet quis quia voluptas eius nemo?
+      Quis magni recusandae porro sed provident nesciunt consequuntur illo quaerat nisi ratione, laboriosam sit consequatur in asperiores ab ipsum necessitatibus obcaecati exercitationem repellat facere, autem numquam fuga? Aliquid, totam amet!</br></big></p>
+    </div><br><br>
+    <p style="font-size:larger; font-weight: bolder"><big><b>NOW WE WILL SEE SOME EFFECTS WE CAN CREATE ON ELEMENTS LIKE RADIO BUTTONS AND CHECKBOXES</b></big></p><br><br>
+    <p><big><b>SELECT THE RADIO BUTTONS BELOW TO SEE THE EFFECT</b></big></p>
+    <div class="radio_button1">
+      <label for="radio1">
+        <input type="radio" name="radio" id="radio1">CHOICE NUMBER 1
+      </label>
+    </div>
+    <div class="radio_button2">
+      <label for="radio2">
+        <input type="radio" name="radio" id="radio2">CHOICE NUMBER 2
+      </label>
+    </div>
+    <div class="radio_button3">
+      <label for="radio3">
+        <input type="radio" name="radio" id="radio3">CHOICE NUMBER 3
+      </label>
+    </div>
+    <div class="radio_button4">
+      <label for="radio4">
+        <input type="radio" name="radio" id="radio4">CHOICE NUMBER 4
+      </label>
+    </div>
+    <div class="radio_button5">
+      <input type="radio" name="radio" id="radio5">CHOICE NUMBER 5
+    </div>
+    <p style="font-size: larger; font-weight: bolder"><big><b>CHECK THE FOLLOWING CHECKBOXES TO SEE THE EFFECT</b></big></p><br><br>
+    <div class="check_1">
+      <label for="box1">
+        <input type="checkbox" name="check_1" id="box1">CHOICE NUMBER 1
+      </label>
+    </div>
+    <div class="check_2">
+      <label for="box2">
+        <input type="checkbox" name="check_2" id="box2">CHOICE NUMBER 2
+      </label>
+    </div>
+    <div class="check_3">
+      <label for="box3">
+        <input type="checkbox" name="check_3" id="box3">CHOICE NUMBER 3
+      </label>
+    </div>
+    <div class="check_4">
+      <label for="box4">
+        <input type="checkbox" name="check_4" id="box4">CHOICE NUMBER 4
+      </label>
+    </div>
+    <div class="check_5">
+      <label for="box5">
+        <input type="checkbox" name="check_5" id="box5">CHOICE NUMBER 5
+      </label>
+    </div>
+    <h1 id="intro_to_pseudo_classes">NOW WE WILL STUDY ABOUT PSEUDO ELEMENTS</h1><br>
+    <p style="text-align:center; font-size: larger; font-weight: bolder"><big><b>PSUEDO ELEMENTS ARE BASICALLY USED TO APPLY STYLING TO SPECIFIC PARTS OF AN ELEMENTS<br> SUPPOSE WE HAVE TO APPLY SOME STYLING TO THE FIRST LINE OR THE FIRST LETTER OF A PARAGRPAH, THEN IN THAT CASE, WE WILL MAKE USE OF PSUEDO ELEMENTS AS SHOWN BELOW</br></big></p>
+      <p id="psuedo_elements_demo1" style="font-size: larger; font-weight: bolder;"><big><b>THIS IS A PARAGRPAH WITH STYLING APPLIED ONLY TO IT'S FIRST LINE <br>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam maxime ipsa porro iure doloribus ex nostrum, voluptate repellendus culpa velit deleniti esse excepturi obcaecati molestias laboriosam temporibus natus fuga quaerat!
+      Nisi vero et cum. Quisquam perferendis architecto tenetur fugit sapiente doloremque culpa perspiciatis placeat fugiat, doloribus suscipit cum nostrum dolorum quos porro sit, ipsa deleniti error quod esse necessitatibus praesentium.</br></big>
+      </p><br><br>
+      <p id="psuedo_elements_demo2" style="text-align:center; font-size: larger; font-weight: bolder">THIS IS A PARAGRPAH IN WHICH TEH STYLING HAS BEEN APPLIED ON TO THE FIRST LETTER OF THE PARA <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, labore vitae a ad provident cum est error voluptas quaerat recusandae velit laudantium inventore dignissimos molestias. Eos a dolor corrupti quis!
+      Veniam consequuntur suscipit illum sapiente nisi, expedita veritatis harum rem! Numquam similique recusandae nesciunt minima doloribus, deserunt possimus magni iure id eos reprehenderit amet tempore temporibus maxime quam reiciendis quibusdam.</p>
+      <BR><BR>
+        <p style="font-size: larger;font-weight: bolder"><big><b>NEXT, WE HAVE THE MOST POPULAR PSUEDO ELEMENT, i.e. THE SELECTION ELEMENT WHICH LETS US CAHNGE TEH STYLING OF AN ELEMENT ONCE IT IS SELECTED ON THE WEB PAGE<br>HERE, WE HAVE A DEMO BELOW : </br></big></p><BR><BR>
+          <big><b>SELECT THE PARAGRPAH BELOW TO SEE THE CHANGE IN THE STYLING : </b></big>
+          <p style="font-size: larger" id="selection_psuedo_element_demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem impedit unde minus adipisci asperiores tempore, provident quibusdam inventore assumenda est fugiat? Eligendi consequatur iure doloribus quo unde tenetur corporis quis.
+          Repudiandae, tempora incidunt. Eveniet, cupiditate cum est nostrum voluptates perspiciatis temporibus possimus fugit facilis aperiam expedita ab nam accusamus ratione placeat reiciendis saepe ullam, animi, fugiat laborum quaerat! In, sunt?
+          Inventore cum autem iure eos, voluptatum dicta doloribus sapiente atque quae, optio, libero architecto nihil quos voluptates. Perspiciatis, reprehenderit. Quaerat similique asperiores ratione aliquid, sapiente praesentium non pariatur dignissimos beatae?
+          Eveniet sunt eius optio mollitia nemo, officiis commodi quisquam fuga eligendi, sapiente esse? Voluptatum culpa ipsum nesciunt quis doloremque delectus a ullam ad sunt facere exercitationem consequatur, voluptates, asperiores id?
+          Ad molestiae quas quo eaque, ab maiores nostrum dolore distinctio aperiam enim. Aspernatur enim, aperiam incidunt facilis omnis nulla sequi porro, accusamus magnam dicta error alias. Explicabo exercitationem cupiditate magni?</p><br><br>
+          <p><big><b>NOW WE WILL CREATE A TRAFFIC LIGHT USING DIVS AND APPROPRIATE CSS STYLING</b></big></p><br><br><br>
+          
+          <div class="main_div">
+            <div class="traffic_lights_parent">
+              <div id="red" class="inner"></div>
+              <div id="yellow" class="inner"></div>
+              <div  id = "green" class="inner"></div>
+            </div>
+          </div>
+          <br><br>
+          <p><big><b>NOW WE WILL SEE THE USE OF INLINE-BLOCK VALUE OF THE DISPLAY PROPERTY</b></big></p><br><br>
+          <p><big><b></b>BELOW, WE HAVE THREE DIVS WHICH BECUASE THEY ARE BLOCK ELEMENTS ARE DISPLAYED ONE BELOW THE OTHER NOW IF WE WANT THESE DIVS TO BE NEXT TO EACH OTHER THEN WE CAN GIVE THE DISPLAY PROPERTY VALUE AS INLINE BUT IT WILL RESULT IN THE DIVS BEING AS SHOWN BELOW : </big></p><br>
+
+          <div class="inline_block_divs1"></div>
+          <div class="inline_block_divs1"></div>
+          <div class="inline_block_divs1"></div>
+          <br><br><br><br><br>
+          <p><big><b>BUT IF WE WANT THE DIVS TO RETAIN THEIR STYLING AND MAKE THEM INLINE AT THE SAME TIME THEN WE CAN GIVE THE DISPLAY PROPERTY VALUE AS "INLINE-BLOCK" AND THE OUTPUT IS SHOWN BELOW : </b></big></p><br><br><br><br>
+          <div class="inline_block_divs"></div>
+          <div class="inline_block_divs"></div>
+          <div class="inline_block_divs"></div>
+          <br><br><br>
+          <p><big><b>NOW WE WILL SEE THE USE OF 'rgba' FORMAT TO SPECIFY THE COLOUR OF AN ELEMENT. HERE 'a' STANDS FOR ALPHA WHICH DENOTES TEH OPACITY OF THE COLOUR</b></big></p><br><br><br>
+          <div id="one" class="test_opacity">OPACITY = .01</div>
+          <div id="two" class="test_opacity">OPACITY = .02</div>
+          <div id="three" class="test_opacity">OPACITY = .03</div>
+          <div id="four" class="test_opacity">OPACITY = .04</div>
+          <div id="five" class="test_opacity">OPACITY = .05</div>
+          <div id="six"
+          class="test_opacity">OPACITY = .06</div>
+          <div id="seven" class="test_opacity">OPACITY = .07</div>
+          <div id="eight" class="test_opacity">OPACITY = .08</div>
+          <div id="nine" class="test_opacity">OPACITY = .09</div>
+          <div id="ten" class="test_opacity">OPACITY = 1.0</div>
+          <br><br><br><br><br>
+          <h1 class="starting_css_transitions">TRANSITIONS IN CSS</h1>
+          <p><big><b>BELOW WE HAVE 10 DIVS, WHICH CHANGE THE STYLING APPLIED TO IT WHEN HOVERED OR CLICKED BY TAKING DIFFERENT TIMES TO CHANGE THE STYLING</b></big></p>
+          <div class="testting_transition" id="one1" ><big><b>CHECK TRANSITION</b></big></div>
+          <div class="testting_transition" id="two1" ><big><b>CHECK TRANSITION</b></big></div>
+          <div class="testting_transition" id="three1" ><big><b>CHECK TRANSITION</b></big></div>
+          <div class="testting_transition"  id="four1"><big><b>CHECK TRANSITION</b></big></div>
+          <div class="testting_transition" id="five1" ><big><b>CHECK TRANSITION</b></big></div>
+          <div class="testting_transition" id="six1" ><big><b>CHECK TRANSITION</b></big></div>
+          <div class="testting_transition" id="seven1" ><big><b>CHECK TRANSITION</b></big></div>
+          <div class="testting_transition" id="eight1" ><big><b>CHECK TRANSITION</b></big></div>
+          <div class="testting_transition" id="nine1" ><big><b>CHECK TRANSITION</b></big></div>
+          <div class="testting_transition" id="ten1"><big><b>CHECK TRANSITION</b></big></div>
+          <br><br><br><br>
+          <p><big><b>NOW WE WILL SEE THE TRANSITION EFFECT PROPERTIES LIKE EASE IN, EASE-IN-OUT ETC</b></big></p><br><br><br>
+          <div class="seeing_different_transition_effects" id="first"></div>
+          <div class="seeing_different_transition_effects" id="second"></div>
+          <div class="seeing_different_transition_effects" id="third"></div>
+          <br><br><br><br><br><br><br>
+          <h1 class="intro_to_transformations_in_css">TRANSFORMATIONS IN CSS</h1><br><br>
+          <h1 id="intro_to_rotate"><big><b>ROTATIONS IN CSS</b></big></h1><br><br><br>
+          <div class="see_roatate" id="degree_0"><big><b>THIS IS 0 DEGREE</b></big></div>
+          <div class="see_roatate" id="degree_45">HOVER OVER THIS TO SEE 45 DEGREE ROTATION</div>
+          <div class="see_roatate" id="degree_90">HOVER OVER THIS TO SEE 90 DEGREE ROTATION</div>
+          <div class="see_roatate" id="degree_135">HOVER OVER THIS TO SEE 135 DEGREE ROTATION</div>
+          <div class="see_roatate" id="degree_180">HOVER OVER THIS TO SEE 180 DEGREE ROTATION</div>
+          <div class="see_roatate" id="degree_225">HOVER OVER THIS TO SEE 225 DEGREE ROTATION</div>
+          <div class="see_roatate" id="degree_270">HOVER OVER THIS TO SEE 270 DEGREE ROTATION</div>
+          <div class="see_roatate" id="degree_315">HOVER OVER THIS TO SEE 315 DEGREE ROTATION</div>
+          <div class="see_roatate" id="degree_360">HOVER OVER THIS TO SEE 360 DEGREE ROTATION</div><br><br><br>
+          <h1 id="intro_to_scale"><big><b>SCALE PROPERTY OF CSS TRANSFORM</b></big></h1>
+          <div class="understanding_scale_property" id="scale_half">HOVER OVER THIS TO SEE THE 0.5x SCALED VERSION</div>
+          <div class="understanding_scale_property" id="scale_none">HOVER OVER THIS TO SEE THE 1.0X SCALED VERSION</div>
+          <div class="understanding_scale_property" id="scale_one_and_half">HOVER OVER THIS TO SEE THE 1.5x SCALED VERSION VERSION</div>
+          <div class="understanding_scale_property" id="scale_twice">HOVER OVER THIS TO SEE THE 2.0x SCALED VERSION</div>
+          <br><br><br><br>
+          <h1 id="intro_to_translate"><big><b>TRANSLATE PROPERTY IN CSS</b></big></h1><br><br>
+          <div class="understanding_translate" id="one1"><big><b>THIS DIV IS IN THE PROPER PLACE</b></big></div>
+          <div class="understanding_translate" id="two2"><big><b>HOVER OVER THIS DIV TO SEE IT SHIFTED IN THE X-AXIS BY 200px</b></big></div>
+          <div class="understanding_translate" id="three3"><big><b>HOVER OVER THIS DIV TO SEE IT SHIFTED IN X-AXIS BY 400px</b></big></div><br><br><br>
+          <h1 class="intro_to_skew">
+            <big><b>SKEW PROPERTY IN CSS</b></big>
+          </h1><br><br>
+          <div class="understanding_skew" id="one11">THIS DIV IS IN PROPER STATE</div>
+          <div class="understanding_skew" id="two22">HOVER OVER THIS DIV TO SKEW IT BY 10 DEGREE</div>
+          <div class="understanding_skew" id="three33">HOVER OVER THIS DIV TO SKEW IT BY 20 DEGREE</div>
+          <div class="understanding_skew" id="four44">HOVER OVER THIS DIV TO SKEW IT BY 30 DEGREE</div>
+          <div class="understanding_skew" id="five55">HOVER OVER THIS DIV TO SKEW IT BY 40 DEGREE</div>
+          <br><br><br><br>
+          <h1 id="intro_to_box_shodow"><big><b>BOX SHADOW IN CSS</b></big></h1>
+          <p><big><b>IN SPECIFYING THE BOX-SHADOW IN THE CSS FILE, WE SPEFICY THREE PARAMETERS THE FIRST TWO ARE THE X AND Y - OFFSETS AND THE THIRD ONE IS THE BLUR RADIUS WE WANT AROUND THE ELEMENT AND THE LAST PARAMETER IS THE COLOUR WITH WHICH WE WANT TO CREATE THE SHADOW</b></big>
+          </p><br><br><br>
+            <div class="understanding_box_shadow" id="one111">HOVER OVER THIS TO CREATE A BOX SHADOW OF 10px</div>
+            <div class="understanding_box_shadow" id="two222">HOVER OVER THIS TO CREATE A BOX SHADOW OF 20px</div>
+            <div class="understanding_box_shadow" id="three333">HOVER OVER THIS TO CREATE A BOX SHADOW OF 30px</div>
+            <div class="understanding_box_shadow" id="four444">HOVER OVER THIS TO CREATE A BOX SHADOW OF 40px</div>
+          <br><br><br>
+          <h1 id="intro_to_background_image"><big><b>BACKGROUND IMAGE IN CSS</b></big></h1><br><br>
+          <p>THERE ARE THREE PROPERTIES IN BACKGROUND IMAGES TO ADJUST THE SIZE OF THE IMAGE AS PER THE DIMENSIONS OF OUR DIV i.e. CONTAIN, COVER AND AUTO</p>
+          <h2 id="bg_image1"><big><b>CONTAIN PROPERTY</b></big></h2>
+          <div class="undertanding_background_images" id="bg_image1"></div>
+          <h2 id="bg_image1" id="bg_image2"><big><b>COVER PROPERTY</b></big></h2>
+          <div class="undertanding_background_images" id="bg_image3"></div>
+          <h2 id="bg_image1"><big><b>AUTO PROPERTY</b></big></h2>
+          <div class="undertanding_background_images"></div>
+          <br><br><br>
+          <h1 id="smiley_face_project"><big><b>CREATING A SMILEY FACE USING CSS PROPERTIES</b></big></h1><br><br>
+          <div class="main_div_for_smiley_face">
+            <div class="face">
+              <div class="eyes">
+                <div class="left"></div>
+                <div class="right"></div>
+              </div>
+              <div class="mouth"></div>
+            </div>
+          </div>
+          <br><br><br>
+          <h1 id="into_to_flexbox"><big><b>FLEXBOX IN CSS</b></big></h1><br><br>     
+          <p style="font-size: large"><big><b>THIS WAS THE INITIAL STATE OF THE FLEXBOX PLAYGROUND. AS VISIBLE ALL THE CHILD DIVS ARE OVERFLOWING FROM THE MAIN CONTAINER DIV</b></big></p><br><br>
+          <img src="FLEXBOX_PLAYGROUND_INITIAL_STATE.png">
+          <br><br><br> 
+            <p style="font-size: xx-large;font-weight: bolder">NOW WE WILL SEE ALL THE FLEX PROPERTIES BY IMPLEMENTING THEM ON THIS PLAYGROUND</p><br><br>   
+            <img src="FLEX_DIRECTION_ROW.jpg">
+            <p style="font-size: x-large;"><big><b>THIS IS WHEN WE GIVE THE CONTAINER DIV, THE DISPLAY PROPERTY AS FLEX</b></big></p><br><br>
+            <img src="FLEX_DIRECTION_COLUMN.png" alt="FLEX DIRECTION - COLUMN">
+            <p style="font-size: x-large;"><big><b>THIS IS WHEN THE FLEX DIRECTION IS GIVEN AS COLUMN (NOTE THAT THE CHILD DIVS ARE STILL CONTAINED INSIDE THE CONTAINER DIV)</b></big></p><br><br>
+            <img src="FLEX_DIRECTION_ROW_REVERSE.png" alt="FLEX DIRECITON - ROW REVERSE">
+            <p style="font-size: x-large;"><big><b>THIS IS WHEN THE FLEX DIRECTION IS GIVEN AS ROW-REVERSE (NOTE THE ORDER OF THE DIVS HAS BEEN REVERSED)</b></big></p><br><br>
+            <img src="FLEX_DIRECTION_COLUMN_REVERSE.png" alt="FLEX DIRECITON - COLUMN REVERSE">
+            <p style="font-size: x-large;"><big><b>THIS IS WHEN THE FLEX DIRECTION IS GIVEN AS COLUMN-REVERSE (NOTE THE ORDER OF THE DIVS HAS BEEN REVERSED)</b></big></p><br><br>
+            <h2 class="justify_content">JUSTIFY-CONTENT PROPERTY OF FLEXBOX</h2><br><br>
+            <p style="font-size: x-large;"><big><b>THIS PROPERTY IS USED TO CONTROL THE SPACING BETWEEN THE ELEMENTS "ALONG THE MAIN-AXIS"</b></big></p><br><br>
+            <img src="JUSTIFY_CONTENT_FLEX_START.png" alt="JUSTIFY-CONTENT: FLEX-START">
+            <p style="font-size: x-large;"><big><b>THIS IS THE PREVIEW WHEN THE JUSTIFY CONTENT IS GIVEN THE VALUE OF FLEX START (NOTE HERE THE WIDTHS OF THE CHID DIVs HAS BEEN REDUCED TO 100px TO MAKE THE EFECT VISIBLE)</b></big></p><br><br>
+            <img src="JUSTIFY_CONTENT_FLEX_END.png" alt="JUSTIFY-CONTENT: FLEX-END">
+            <p style="font-size: x-large;"><big><b>THIS IS THE PREVIEW WHEN THE JUSTIFY CONTENT IS GIVEN THE VALUE OF FLEX END(NOTE HERE THE WIDTHS OF THE CHID DIVs HAS BEEN REDUCED TO 100px TO MAKE THE EFECT VISIBLE)</b></big></p><br><br>
+            <img src="JUSTIFY_CONTENT_CENTER.png" alt="JUSTIFY-CONTENT: CENTER">
+            <p style="font-size: x-large;"><big><b>THIS IS THE PREVIEW WHEN THE JUSTIFY CONTENT IS GIVEN THE VALUE OF CENTER(NOTE HERE THE WIDTHS OF THE CHID DIVs HAS BEEN REDUCED TO 100px TO MAKE THE EFECT VISIBLE)</b></big></p><br><br>
+            
+
+            <img src="JUSTIFY_CONTENT_SPACE_BETWEEN.png" alt="JUSTIFY-CONTENT: SPACE-BETWEEN">
+            <p style="font-size: x-large;"><big><b>THIS IS THE PREVIEW WHEN THE JUSTIFY CONTENT IS GIVEN THE VALUE OF SPACE-BETWEEN(NOTE HERE THE WIDTHS OF THE CHID DIVs HAS BEEN REDUCED TO 100px TO MAKE THE EFECT VISIBLE)</b></big></p><br><br>
+
+
+            <img src="JUSTIFY_CONTENT_SPACE_AROUND.png" alt="JUSTIFY-CONTENT: SPACE-AROUND">
+            <p style="font-size: x-large;"><big><b>THIS IS THE PREVIEW WHEN THE JUSTIFY CONTENT IS GIVEN THE VALUE OF SPACE-AROUND(NOTE HERE THE WIDTHS OF THE CHID DIVs HAS BEEN REDUCED TO 100px TO MAKE THE EFECT VISIBLE)</b></big></p><br><br>
+
+
+            <img src="JUSTIFY_CONTENT_SPACE_EVENLY.png" alt="JUSTIFY-CONTENT: SPACE_EVENLY">
+            <p style="font-size: x-large;"><big><b>THIS IS THE PREVIEW WHEN THE JUSTIFY CONTENT IS GIVEN THE VALUE OF SPACE_EVENLY(NOTE HERE THE WIDTHS OF THE CHID DIVs HAS BEEN REDUCED TO 100px TO MAKE THE EFECT VISIBLE)</b></big></p><br><br>  
+            
+            <h2 class="intro_to_flex_wrap"><big><b>FLEX WRAP IN CSS</b></big></h2>
+            
+            
+            <img src="FLEX_WRAP.png" alt="FLEX: WRAP">
+            <p style="font-size: x-large;"><big><b>THIS IS THE PREVIEW WHEN THE WRAP PROPERTY IS ON(NOTE HERE THE WIDTHS OF THE CHID DIVs HAS BEEN INCREASED TO 500px TO MAKE THE EFECT VISIBLE)</b></big></p><br><br> 
+
+
+            <img src="FLEX_WRAP_REVERSE.png" alt="FLEX: WRAP-REVERSE">
+            <p style="font-size: x-large;"><big><b>THIS IS THE PREVIEW WHEN THE WRAP-REVERSE PROPERTY IS ON(NOTE HERE THE WIDTHS OF THE CHID DIVs HAS BEEN INCREASED TO 500px TO MAKE THE EFECT VISIBLE)</b></big></p><br><br> 
+
+
+            
+
+          <h1 id="flex_playground">
+            <big><b> ACTUAL FLEXBOX PLAYGROUND</b></big><br><br>
+                       
+          </h1><br><br>
+            <div class="container">
+              <div style="background-color:#9400d3"><big><b>VIOLET</b></big></div>
+              <div style="background-color:#4b0082"><big><b>INDIGO</b></big></div>
+              <div style="background-color:#0000ff"><big><b>BLUE</b></big></div>
+              <div style="background-color:#00ff00"><big><b>GREEEN</b></big></div>
+              <div style="background-color:#ffff00"><big><b>YELLOW</b></big></div>
+              <div style="background-color:#ff7f00"><big><b>ORANGE</b></big></div>
+              <div style="background-color:#ff0000"><big><b>RED</b></big></div>
+            </div><br><br><br><br><br>
+            <h1 class="intro_to_animations_in_css">ANIMATIONS IN CSS</h1><br><br><br> 
+            <h2 class="animation_playground">ANIMATION PLAYGROUND</h2><br><br>
+            <div class="animation_playground_container">
+              <div style="background-color:#9400d3" class="child_div1">VIOLET</div>
+              <div style="background-color:#4b0082" class="child_div2">INDIGO</div>
+              <div style="background-color:#0000ff" class="child_div3">BLUE</div>
+              <div style="background-color:#00ff00" class="child_div4">GREEN</div>
+              <div style="background-color:#ffff00" class="child_div5">YELLOW</div>
+              <div style="background-color:#ff7f00" class="child_div6">ORANGE</div>
+              <div style="background-color:#ff0000" class="child_div7">RED</div>
+            </div>
+        </main>
+    <br /><br /><br /><br /><br /><br /><br /><br />
+    <!-- <footer>
+      <p id="footer_para">
+        <big><b>THANK YOU SO MUCH FOR USING OUR WEBSITE</b></big>
+      </p>
+    </footer> -->
+  </body>
+</html>

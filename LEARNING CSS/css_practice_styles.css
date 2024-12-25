@@ -1,0 +1,1116 @@
+* {
+  font-family: "Courier New";
+}
+
+h1 {
+  color: #1b74e4;
+}
+
+p {
+  text-align: center;
+}
+
+#search_button {
+  background-color: black;
+  color: white;
+}
+
+.login_and_register_buttons {
+  background-color: aqua;
+}
+
+#intro_para {
+  text-align: center;
+  font-size: larger;
+  background-color: #1b74e4;
+  color: white;
+}
+
+.info_about_descendant_selectors {
+  text-align: center;
+}
+
+#footer_para {
+  text-align: center;
+  font-size: larger;
+  background-color: #1b74e4;
+  color: white;
+}
+
+.selector_headings {
+  text-align: center;
+}
+
+.descendant_selector_example1_div1 p {
+  background-color: red;
+  color: white;
+}
+
+.descendant_selector_example1_div2 p {
+  background-color: green;
+  color: white;
+}
+
+.descendant_selector_example1_div3 p {
+  background-color: #1b74e4;
+  color: white;
+}
+
+#paragraph_number1 a {
+  color: red;
+}
+
+#paragraph_number1 a:hover {
+  color: green;
+}
+
+#paragraph_number1 a:active {
+  color: #1b74e4;
+}
+
+#paragraph_number_2 a {
+  color: green;
+}
+
+#paragraph_number_2 a:hover {
+  color: #1b74e4;
+}
+
+#paragraph_number_2 a:active {
+  color: red;
+}
+
+#paragraph_number_3 a {
+  color: #1b74e4;
+}
+
+#paragraph_number_3 a:hover {
+  color: red;
+}
+
+#paragraph_number_3 a:active {
+  color: green;
+}
+
+.intro_to_child_combinator {
+  font-size: larger;
+  background-color: #1b74e4;
+  color: white;
+  text-align: center;
+}
+
+.child_combinator_parent_div > p {
+  background-color: #1b74e4;
+  color: white;
+}
+
+.intro_to_attribute_selector {
+  background-color: #1b74e4;
+  color: white;
+  text-align: center;
+  font-size: larger;
+}
+
+div[id="MyID"] p {
+  background-color: green;
+  color: white;
+  text-align: center;
+  font-size: larger;
+}
+
+#intro_to_pseudo_classes {
+  background-color: #1b74e4;
+  color: white;
+}
+
+.info_about_pseudo_classes {
+  text-align: center;
+  font-size: larger;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#button1 {
+  background-color: #1b74e4;
+  color: white;
+  font-size: larger;
+}
+
+#button1:hover {
+  background-color: aqua;
+  color: black;
+  font-weight: bold;
+}
+
+#button2 {
+  background-color: #1b74e4;
+  color: white;
+  font-size: larger;
+}
+
+#button2:active {
+  background-color: red;
+  color: black;
+  font-weight: bold;
+}
+
+#psuedo_class_para1 {
+  background-color: green;
+  color: white;
+}
+
+#psuedo_class_para1:hover {
+  background-color: yellow;
+  color: black;
+  font-size: larger;
+}
+
+.radio_button1:hover {
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.radio_button1:active {
+  background-color: #1b74e4;
+  color: white;
+}
+.radio_button2:hover {
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.radio_button2:active {
+  background-color: #1b74e4;
+  color: white;
+}
+.radio_button3:hover {
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.radio_button3:active {
+  background-color: #1b74e4;
+  color: white;
+}
+.radio_button4:hover {
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.radio_button4:active {
+  background-color: #1b74e4;
+  color: white;
+}
+.radio_button5:hover {
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.radio_button5:active {
+  background-color: #1b74e4;
+  color: white;
+}
+
+.check_1:hover {
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.check_1:active {
+  background-color: #1b74e4;
+  color: white;
+}
+
+.check_2:hover {
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.check_2:active {
+  background-color: #1b74e4;
+  color: white;
+}
+
+.check_3:hover {
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.check_3:active {
+  background-color: #1b74e4;
+  color: white;
+}
+
+.check_4:hover {
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.check_4:active {
+  background-color: #1b74e4;
+  color: white;
+}
+
+.check_5:hover {
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.check_5:active {
+  background-color: #1b74e4;
+  color: white;
+}
+
+#psuedo_elements_demo1::first-line {
+  background-color: #1b74e4;
+  color: white;
+}
+
+#psuedo_elements_demo2::first-letter {
+  background-color: #1b74e4;
+  color: white;
+}
+
+#selection_psuedo_element_demo::selection {
+  background-color: yellow;
+  color: black;
+  font-weight: bolder;
+}
+
+.main_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.traffic_lights_parent {
+  height: 200px;
+  width: 70px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.inner {
+  height: 50px;
+  width: 50px;
+  border: 2px solid black;
+  margin: 5px;
+  border-radius: 50%;
+}
+
+#red {
+  background-color: red;
+}
+
+#yellow {
+  background-color: yellow;
+}
+
+#green {
+  background-color: green;
+}
+
+.inline_block_divs {
+  height: 200px;
+  width: 200px;
+  background-color: #1b74e4;
+  margin: 10px;
+  border: 10px solid black;
+  display: inline-block;
+}
+
+.inline_block_divs1 {
+  height: 200px;
+  width: 200px;
+  background-color: #1b74e4;
+  margin: 10px;
+  border: 10px solid black;
+  display: inline;
+}
+
+.test_opacity {
+  height: 200px;
+  width: 200px;
+  display: block;
+  border: 5px solid black;
+  margin: 10px;
+  font-size: x-large;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#one {
+  background-color: rgba(26.999999999999986, 116.00000000000017, 228, 0.1);
+}
+
+#two {
+  background-color: rgba(26.999999999999986, 116.00000000000017, 228, 0.2);
+}
+
+#three {
+  background-color: rgba(26.999999999999986, 116.00000000000017, 228, 0.3);
+}
+
+#four {
+  background-color: rgba(26.999999999999986, 116.00000000000017, 228, 0.4);
+}
+
+#five {
+  background-color: rgba(26.999999999999986, 116.00000000000017, 228, 0.5);
+}
+
+#six {
+  background-color: rgba(26.999999999999986, 116.00000000000017, 228, 0.6);
+}
+
+#seven {
+  background-color: rgba(26.999999999999986, 116.00000000000017, 228, 0.7);
+}
+
+#eight {
+  background-color: rgba(26.999999999999986, 116.00000000000017, 228, 0.8);
+}
+
+#nine {
+  background-color: rgba(26.999999999999986, 116.00000000000017, 228, 0.9);
+}
+
+#ten {
+  background-color: rgba(26.999999999999986, 116.00000000000017, 228, 1);
+}
+
+.starting_css_transitions {
+  font-weight: bolder;
+  font-size: xx-large;
+  text-align: center;
+  background-color: #1b74e4;
+  color: white;
+}
+
+.testting_transition {
+  height: 200px;
+  width: 200px;
+  background-color: #1b74e4;
+  border: 5px solid black;
+  margin: 50px;
+  font-size: larger;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.testting_transition:hover {
+  background-color: aqua;
+  border-radius: 50%;
+}
+
+.testting_transition:active {
+  background-color: black;
+  color: white;
+  border-radius: 20%;
+}
+
+#one1 {
+  transition: 1s;
+}
+
+#two1 {
+  transition: 2s;
+}
+
+#three1 {
+  transition: 3s;
+}
+
+#four1 {
+  transition: 4s;
+}
+
+#five1 {
+  transition: 5s;
+}
+
+#six1 {
+  transition: 6s;
+}
+
+#seven1 {
+  transition: 7s;
+}
+
+#eight1 {
+  transition: 8s;
+}
+
+#nine1 {
+  transition: 9s;
+}
+
+#ten1 {
+  transition: 10s;
+}
+
+.seeing_different_transition_effects {
+  height: 300px;
+  width: 300px;
+  background-color: aqua;
+  margin: 30px;
+  border: 5px solid black;
+  display: inline-block;
+  transition: margin-top 2s ease 0.2s, background-color 2s ease 0.2s;
+}
+
+.seeing_different_transition_effects:hover {
+  margin-top: 400px; /* Corrected to 400px for the falling effect */
+  background-color: hotpink;
+}
+
+#first {
+  transition-delay: 1s;
+}
+
+#second {
+  transition-delay: 2s;
+}
+
+#third {
+  transition-delay: 3s;
+}
+
+.seeing_different_transition_effects {
+  height: 300px;
+  width: 300px;
+  background-color: aqua;
+  margin: 30px;
+  border: 5px solid black;
+  display: inline-block;
+  transition: background-color 2s ease 0.2s; /* Only transition background color for all */
+}
+
+/*#first {
+  transition: margin-top 2s ease 1s;
+}
+
+#second {
+  transition: margin-top 2s ease-in 2s;
+}
+
+#third {
+  transition: margin-top 2s ease-in-out 3s;
+}*/
+
+#first:hover {
+  margin-top: 400px;
+  background-color: hotpink;
+  transition: margin-top 2s ease 1s;
+}
+
+#second:hover {
+  margin-top: 400px;
+  background-color: hotpink;
+  transition: margin-top 2s ease-in 1s;
+}
+
+#third:hover {
+  margin-top: 400px;
+  background-color: hotpink;
+  transition: margin-top 2s ease-in-out 1s;
+}
+
+.intro_to_transformations_in_css {
+  text-align: center;
+  background-color: #1b74e4;
+  color: white;
+  font-weight: bolder;
+}
+
+#intro_to_rotate {
+  background-color: #1b74e4;
+  color: white;
+  text-align: center;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.see_roatate {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  margin: 60px;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: x-large;
+  font-weight: bolder;
+  transition: transform 1s;
+}
+
+#degree_0:hover {
+  transform: rotate(0deg);
+}
+
+#degree_45:hover {
+  transform: rotate(45deg);
+}
+
+#degree_90:hover {
+  transform: rotate(90deg);
+}
+
+#degree_135:hover {
+  transform: rotate(135deg);
+}
+
+#degree_180:hover {
+  transform: rotate(180deg);
+}
+
+#degree_225:hover {
+  transform: rotate(225deg);
+}
+
+#degree_270:hover {
+  transform: rotate(270deg);
+}
+
+#degree_315:hover {
+  transform: rotate(315deg);
+}
+
+#degree_360:hover {
+  transform: rotate(360deg);
+}
+
+#intro_to_scale {
+  text-align: center;
+  font-weight: bolder;
+  background-color: #1b74e4;
+  color: white;
+  font-size: larger;
+}
+
+.understanding_scale_property {
+  height: 200px;
+  width: 200px;
+  background-color: hotpink;
+  font-weight: bolder;
+  margin: 150px;
+  border: 5px solid black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 1s;
+}
+
+#scale_half:hover {
+  transform: scale(0.5);
+}
+
+#scale_none:hover {
+  transform: scale(1);
+}
+
+#scale_one_and_half:hover {
+  transform: scale(1.5);
+}
+
+#scale_twice:hover {
+  transform: scale(2);
+}
+
+#intro_to_translate {
+  text-align: center;
+  background-color: #1b74e4;
+  color: white;
+  font-size: larger;
+}
+
+.understanding_translate {
+  height: 200px;
+  width: 200px;
+  background-color: hotpink;
+  margin: 20px;
+  border: 5px solid black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 1s;
+}
+
+#one1:hover {
+  background-color: aqua;
+}
+
+#two2:hover {
+  transform: translate(200px);
+  background-color: aqua;
+}
+
+#three3:hover {
+  transform: translate(400px);
+  background-color: aqua;
+}
+
+.intro_to_skew {
+  text-align: center;
+  background-color: #1b74e4;
+  color: white;
+  font-size: larger;
+}
+
+.understanding_skew {
+  height: 200px;
+  width: 200px;
+  background-color: aqua;
+  border: 5px solid black;
+  margin: 75px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  font-size: larger;
+  transition: transform 2s, background-color 1s;
+}
+
+#one11:hover {
+  background-color: hotpink;
+  transform: skewX(0deg);
+}
+
+#two22:hover {
+  background-color: hotpink;
+  transform: skewX(10deg);
+}
+
+#three33:hover {
+  background-color: hotpink;
+  transform: skewX(20deg);
+}
+
+#four44:hover {
+  background-color: hotpink;
+  transform: skewX(30deg);
+}
+
+#five55:hover {
+  background-color: hotpink;
+  transform: skewX(40deg);
+}
+
+#intro_to_box_shodow {
+  text-align: center;
+  background-color: #1b74e4;
+  color: white;
+  font-size: larger;
+  margin: auto;
+}
+
+.understanding_box_shadow {
+  height: 300px;
+  width: 300px;
+  background-color: aqua;
+  text-align: center;
+  margin: 50px;
+  border: 5px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  font-weight: bolder;
+  transition: transform 1s 0.5s, background-color 1s, 0.5s;
+}
+
+
+#one111:hover {
+  background-color: yellow;
+  box-shadow: 10px 10px 10px black;
+}
+
+#two222:hover {
+  background-color: yellow;
+  box-shadow: 20px 20px 20px black;
+}
+
+#three333:hover {
+  background-color: yellow;
+  box-shadow: 30px 30px 30px black;
+}
+
+#four444:hover {
+  background-color: yellow;
+  box-shadow: 40px 40px 40px black;
+}
+
+#intro_to_background_image{
+  text-align: center;
+  background-color: #1b74e4;
+  color: white;
+  font-size: larger;
+}
+
+#bg_image1{
+  background-color: #1b74e4;
+  color: white;
+  text-align: center;
+  font-size: larger;
+}
+
+.undertanding_background_images{
+  height: 400px;
+  width: 800px;
+  margin: auto;
+  background-image: url("Dhuparati_216.JPG");
+}
+
+#bg_image1{
+  background-size: contain;
+}
+
+#bg_image2{
+  background-size: cover;
+}
+
+#bg_image3{
+  background-size: auto;
+}
+
+#smiley_face_project{
+  text-align: center;
+  background-color: #1b74e4;
+  color: white;  
+}
+
+.main_div_for_smiley_face{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.face{
+  height: 400px;
+  width: 400px;
+  background-color: yellow;
+  border-radius: 50%;
+  border: 5px solid black;  
+}
+
+.mouth{
+  height: 100px;
+  width: 200px;
+  background-color: orange;
+  position: relative;
+  top: 120px;
+  left: 100px;
+  border-radius: 0 0 50px 50px;
+}
+
+.left, .right{
+  height: 75px;
+  width: 75px;
+  background-color: black;
+  border-radius:50% ;
+  position: relative;
+  top: 75px;
+  left: 75px;
+}
+
+.right{
+  top: 1px;
+  position: relative;
+  left: 250px;
+}
+
+#into_to_flexbox{
+  background-color: #1b74e4;
+  color: white;
+  text-align: center;
+}
+
+#flex_playground{
+  color: black;
+  text-align: center;  
+}
+
+.container {
+  height: 400px;
+  width: 80%;
+  background-color: lightblue;
+  margin: auto;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+}
+
+.container div {
+  height: 50px;
+  width: 500px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.5em;
+  color: white;
+}
+
+.justify_content{
+  text-align: center;
+  background-color: #1b74e4;
+  color: white;
+  font-weight: bolder;
+}
+
+.intro_to_flex_wrap{
+  text-align: center;
+  background-color: #1b74e4;
+  color: white;
+  font-weight: bolder;
+}
+
+.intro_to_animations_in_css{
+  background-color: #1b74e4;
+  color:white;
+  text-align: center;
+  font-size: xx-large;
+}
+
+.animation_playground{
+  text-align: center;
+  font-size: xx-large;
+}
+
+.animation_playground_container{
+  height: 700px;
+  width: 80%;
+  background-color: azure;
+  border: 5px solid black;  
+}
+
+.animation_playground_container div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bolder;
+  font-size: xx-large;
+  color: white;
+  height: 100px;
+  width: 300px;    
+}
+
+.child_div1{
+  animation-name: animation1;
+  animation-duration: 1s;
+  animation-timing-function: ease in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 1s;  
+}
+
+.child_div2{
+  animation-name: animation2;
+  animation-duration: 1s;
+  animation-timing-function: ease in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 2s;  
+}
+
+.child_div3{
+  animation-name: animation3;
+  animation-duration: 1s;
+  animation-timing-function: ease in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 3s;  
+}
+
+.child_div4{
+  animation-name: animation4;
+  animation-duration: 1s;
+  animation-timing-function: ease in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 4s;  
+}
+
+.child_div5{
+  animation-name: animation5;
+  animation-duration: 1s;
+  animation-timing-function: ease in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 5s;  
+}
+
+.child_div6{
+  animation-name: animation6;
+  animation-duration: 1s;
+  animation-timing-function: ease in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 6s;  
+}
+
+.child_div7{
+  animation-name: animation7;
+  animation-duration: 1s;
+  animation-timing-function: ease in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 7s;  
+}
+
+@keyframes animation1{
+  0%{
+    width: 100px;
+    margin-left: 0px;
+    border-radius: 0px;
+    background-color: violet;
+  }
+  
+  50%{
+    width: 200px;
+    margin-left: 40%;
+    border-radius: 25%;
+  }
+  100%{
+    border-radius: 50%;
+    width: 300px;
+    margin-left: 80%;
+  }
+}
+
+@keyframes animation2{
+  0%{
+    width: 100px;
+    margin-left: 0px;
+    border-radius: 0px;
+  }
+  50%{
+    width: 200px;
+    margin-left: 40%;
+    border-radius: 25%;
+  }
+  100%{
+    border-radius: 50%;
+    width: 300px;
+    margin-left: 80%;
+  }
+}
+
+@keyframes animation3{
+  0%{
+    width: 100px;
+    margin-left: 0px;
+    border-radius: 0px;
+  }
+  50%{
+    width: 200px;
+    margin-left: 40%;
+    border-radius: 25%;
+  }
+  100%{
+    border-radius: 50%;
+    width: 300px;
+    margin-left: 80%;
+  }
+}
+
+
+@keyframes animation4{
+  0%{
+    width: 100px;
+    margin-left: 0px;
+    border-radius: 0px;
+  }
+  50%{
+    width: 200px;
+    margin-left: 40%;
+    border-radius: 25%;
+  }
+  100%{
+    border-radius: 50%;
+    width: 300px;
+    margin-left: 80%;
+  }
+}
+
+
+@keyframes animation5{
+  0%{
+    width: 100px;
+    margin-left: 0px;
+    border-radius: 0px;
+  }
+  50%{
+    width: 200px;
+    margin-left: 40%;
+    border-radius: 25%;
+  }
+  100%{
+    border-radius: 50%;
+    width: 300px;
+    margin-left: 80%;
+  }
+}
+
+
+@keyframes animation6{
+  0%{
+    width: 100px;
+    margin-left: 0px;
+    border-radius: 0px;
+  }
+  50%{
+    width: 200px;
+    margin-left: 40%;
+    border-radius: 25%;
+  }
+  100%{
+    border-radius: 50%;
+    width: 300px;
+    margin-left: 80%;
+  }
+}
+
+
+@keyframes animation7{
+  0%{
+    width: 100px;
+    margin-left: 0px;
+    border-radius: 0px;
+  }
+  50%{
+    width: 200px;
+    margin-left: 40%;
+    border-radius: 25%;
+  }
+  100%{
+    border-radius: 50%;
+    width: 300px;
+    margin-left: 80%;
+  }
+}

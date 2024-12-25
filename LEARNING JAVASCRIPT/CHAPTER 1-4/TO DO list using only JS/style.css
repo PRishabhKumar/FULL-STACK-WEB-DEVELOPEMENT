@@ -1,0 +1,36 @@
+body {
+  background-color: #1b74e4;
+  color: white;
+}
+
+.main_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+
+.option1:hover {
+  transform: scale(1.5);
+  padding: 20px, 30px;
+  cursor: pointer;
+}
+
+.option2:hover {
+  transform: scale(1.5);
+  padding: 20px, 30px;
+  cursor: pointer;
+}
+
+.option3:hover {
+  transform: scale(1.5);
+  padding: 20px, 30px;
+  cursor: pointer;
+}
+
+.option4:hover {
+  transform: scale(1.5);
+  padding: 20px, 30px;
+  cursor: pointer;
+}
