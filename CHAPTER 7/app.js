@@ -363,6 +363,20 @@ const StudentData = {
 
 let duplicateStudent = { ...StudentData };
 
+// This also helps us to merge two or more objects
+
+let obj1 = {
+  a: 1,
+  b: 2,
+};
+
+let obj2 = {
+  c: 3,
+  d: 4,
+};
+
+let merged_object = { ...obj1, ...obj2 };
+
 // Now we will see the concept of REST
 
 // REST is basically the exact opposite of the spread concept,
@@ -378,5 +392,49 @@ function addNumbersOfArray(...numbers) {
 
 // Now whenever we use a function with parameters or even without parameters, there is a thing called 'parameters' that is a collection but it is not an array so tehrefore the array methods like map() reduce() some() etc will not work for the 'parameters'
 
+// Next, we will see the concept of destructuring
+// This basically means that we can assign some elements of an array to some varaibles
 
-// Next, we will see the concept of 
+let names = [
+  "P Rishabh Kumar",
+  "Pratham Patil",
+  "Rajvi Solnaki",
+  "Vrushali",
+  "Tithi Radia",
+];
+
+let [topper_rank1, topper_rank2, topper_rank3, ...others] = [
+  names[1],
+  names[2],
+  ,
+  names[4],
+]; //the remaining names will be stored inside the other array using the concept of REST
+
+// when we want to destructure objects, we will use curly braces instead of the square brackets
+
+// whatever we want to search for in the object teh same name is given to the varaible in which teh value is going to be stored
+
+let RishabhKumar = {
+  name: "P Rishabh Kumar",
+  age: 20,
+  cgpa: 9.32,
+  username: "Rishi@123",
+  password: "ABCD@1234",
+  reg_number: "23BCE0957",
+};
+
+let { username, password, reg_number } = RishabhKumar; //this will search for the keys, username, password and reg_number in teh objects, fetch the info and store it in the respective variables
+
+// However if we want the value of a particular key to be stored in a varaible whose name is not the same as that of the key, the we will have to use the following syntax :
+
+let {
+  username: new_user,
+  password: new_pass,
+  reg_number: new_reg_number,
+} = RishabhKumar; //this will feetch the value for the key 'username' and store it in the variable new_user and so on for other varables as well
+
+// Now comes the real part i.e. DOM and integrating HTML, CSS with JS
+
+// DOM stands for Document Object Model
+
+//Whenever we write any HTML, CSS code, and when we link that code to JS, it generate an object tree for JS, i.e. each and every or each and every element will be treated as a n object and becomes a node in the tree and the tree is constrcuted in the order of occurence of the elements . For example, if we have a div wich has an unordered list of 3 elements, then the root node will be the document object, then we will have the head title body and all those things, finally for the main tags, we will have div as the parent and ul as the child which in turn will have 3 children in the form of the 'li' tags

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spider-Man</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Spider Man</h1>
+    <img src="Assets/spiderman_img.png" />
+    <h2>About</h2>
+    <p>
+      <b>Spider-Man</b> is a superhero appearing in American comic books
+      published by
+      <a href="https://www.google.com/search?q=Marvel+Comics">Marvel Comics</a>.
+      Created by writer-editor <b>Stan Lee</b> and artist <b>Steve Ditko</b>, he
+      first appeared in the anthology comic book
+      <a href="https://www.google.com/search?q=Amazing+Fantasy"
+        >Amazing Fantasy</a
+      >
+      #15 (August 1962) in the <a href="#">Silver Age of Comic Books</a>. He has
+      been featured in comic books, television shows, films, video games,
+      novels, and plays
+    </p>
+
+    <div class="box">
+      <h4>Publication Info</h4>
+      <ul>
+        <li><a href="#" class="boxLink">Publisher</a></li>
+        <li><a href="#" class="boxLink">First Appearance</a></li>
+        <li>
+          Created by
+          <ul>
+            <li><a href="#" class="boxLink">Stan Lee</a></li>
+            <li><a href="#" class="boxLink">Steve Ditko</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <h2>Creation & Development</h2>
+    <p id="description">
+      In 1962, with the success of the Fantastic Four, Marvel Comics editor and
+      head writer Stan Lee was casting for a new superhero idea. He said the
+      idea for Spider-Man arose from a surge in teenage demand for comic books
+      and the desire to create a character with whom teens could identify. As
+      with Fantastic Four, Lee saw Spider-Man as an opportunity to "get out of
+      his system" what he felt was missing in comic books. In his autobiography,
+      Lee cites the non-superhuman pulp magazine crime fighter the Spider as a
+      great influence, and in a multitude of print and video interviews, Lee
+      stated he was further inspired by seeing a spider climb up a wall—adding
+      in his autobiography that he has told that story so often he has become
+      unsure of whether or not this is true.
+    </p>
+    <div class="images">
+      <img src="Assets/creation_1.png" />
+      <img src="Assets/creation_2.jpeg" />
+      <img src="Assets/creation_3.jpeg" class="oldImg" />
+    </div>
+    <br /><br /><br /><br /><br />
+    <div class="mycontent">
+      <h1 style="text-align: center">My explanation starts here</h1>
+      <p>
+        Here we will see how to access the various objects present in the DOM
+        tree and to manipulte them
+      </p>
+      <p>
+        First of all, when we inspect any page and go to the console section, we
+        cant print any object of the DOM tree using the console.dir() function
+      </p>
+      <p>
+        When we print the 'document' object which is the root node of the DOM
+        tree, we get all the properties of this object one of which is the 'all'
+        property which has all the components and elements present inside of it
+        in numbered fashion i.e. it is a collection and we can access any
+        particular object (say h1) by using it's index just like we do in the
+        case of arrays
+      </p>
+      <p>
+        Upon accessing a particular object, we get the list of all the
+        properties of that paerticular object and we can access andmake changes
+        to any one of them
+      </p>
+      <p>
+        For example if the h1 tage is at the 8th index inside the 'all' section
+        of the document object, and we want to change the inner text (which is
+        basically the text written inside that h1 tag), we can write the JS code
+        as follows :
+      </p>
+      <p>document.all[8].innerText = "Your new text"</p>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
