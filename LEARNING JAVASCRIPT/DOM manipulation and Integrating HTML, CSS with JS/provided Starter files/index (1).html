@@ -9,7 +9,7 @@
   </head>
   <body>
     <h1>Spider Man</h1>
-    <img src="Assets/spiderman_img.png" />
+    <img id="mainImage" src="Assets/spiderman_img.png" />
     <h2>About</h2>
     <p>
       <b>Spider-Man</b> is a superhero appearing in American comic books
@@ -61,16 +61,18 @@
     </div>
     <br /><br /><br /><br /><br />
     <div class="mycontent">
-      <h1 style="text-align: center">My explanation starts here</h1>
-      <p>
+      <h1 id="MyFirstHeadingInThisPage" style="text-align: center">
+        My explanation starts here
+      </h1>
+      <p id="firstPara">
         Here we will see how to access the various objects present in the DOM
         tree and to manipulte them
       </p>
-      <p>
+      <p id="secondPara">
         First of all, when we inspect any page and go to the console section, we
         cant print any object of the DOM tree using the console.dir() function
       </p>
-      <p>
+      <p id="thirdPara">
         When we print the 'document' object which is the root node of the DOM
         tree, we get all the properties of this object one of which is the 'all'
         property which has all the components and elements present inside of it
@@ -78,7 +80,7 @@
         particular object (say h1) by using it's index just like we do in the
         case of arrays
       </p>
-      <p>
+      <p id="fourthPara">
         Upon accessing a particular object, we get the list of all the
         properties of that paerticular object and we can access andmake changes
         to any one of them
@@ -89,7 +91,92 @@
         basically the text written inside that h1 tag), we can write the JS code
         as follows :
       </p>
-      <p>document.all[8].innerText = "Your new text"</p>
+      <p id="fifthPara">document.all[8].innerText = "Your new text"</p>
+    </div>
+    <h1 style="text-align: center">Demo of selecting elements by class name</h1>
+    <div class="sampleClass">
+      <h1>This is a sample heading</h1>
+      <ol type="i">
+        <li>Java</li>
+        <li>Python</li>
+        <li>C</li>
+        <li>C++</li>
+        <li>JavaScript</li>
+      </ol>
+    </div>
+    <p class="sampleClass">
+      This is a sample paragraph with the same class name as the div above
+    </p>
+    <h1 style="text-align: center">Demo of selecting elements by tag name</h1>
+    <div class="dmoOfTagName">
+      <p>This is a sample paragraph with no id or class name</p>
+      <p id="para1">This is a sample paragraph with an ID but no class name</p>
+      <p class="para2">
+        This is a sample paragraph with a class name but no ID
+      </p>
+      <p id="para3" class="para3">
+        This is a sample paragraph with both an ID as well as a class name
+      </p>
+    </div>
+    <h1 style="text-align: center">Start of query selectors</h1>
+    <div class="querySelectors">
+      <p id="sampleID">
+        Smaple paragrpah to test out the ID based querySelectors
+      </p>
+      <p id="sampleID">
+        Another sample para with the same ID as the previous one to test out the
+        querySelectorAll() based on ID
+      </p>
+      <p class="SampleClass">
+        Sample paragraph to test out the querySelector absed on class names
+      </p>
+      <p class="SampleClass">
+        Another sample para with the same class name as the previous one to test
+        out the querySelectorAll() based on the class names
+      </p>
+    </div>
+    <h1 style="text-align: center">
+      Starting of class manipulation using classList
+    </h1>
+    <div class="classManipulationUsingclassList">
+      <p id="paraInsideDiv1">
+        This is a sample paragraph with no class names given to it as of now
+      </p>
+      <p id="paraInsideDiv2" class="para1">
+        This is a sample pragraph which has one class name assigned to it
+      </p>
+      <p id="paraInsideDiv3" class="para123 para456">
+        This is a sample paragraph with 2 class names assgiend to it
+      </p>
+    </div>
+    <h1 style="text-align: center">
+      Demo of how to change styles using the classList of an element
+    </h1>
+    <div class="demoOfChangingStylesUsingclassList">
+      <div class="button">
+        <button class="sampleButton">This is a sample button</button>
+      </div>
+    </div>
+    <h1 style="text-align: center">Start of navigation using JS</h1>
+    <div class="navigationInJS">
+      <h3 class="childHeading">Sample heading which is inside the main div</h3>
+      <p class="childParagraph">
+        Sample pargraph which is also inside the main div an who is a sibling of
+        the above heading
+      </p>
+      <div class="childDiv">
+        <ul class="unorderedList">
+          <li class="listItem">
+            Sample list item inside the unordered list inside of a child div
+          </li>
+          <li class="listItem">
+            Sample list item inside the unordered list inside of a child div
+          </li>
+          <li class="listItem">
+            Sample list item inside the unordered list inside of a child div
+          </li>
+        </ul>
+      </div>
     </div>
     <script src="app.js"></script>
   </body>

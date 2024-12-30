@@ -26,3 +26,29 @@ body {
 #description {
   background-color: antiquewhite;
 }
+
+.sampleClass {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: auto;
+  border: 2px solid black;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.sampleButton {
+  font-weight: bolder;
+  background-color: #4caf50;
+  border-radius: 5px;
+}
+
+.buttonClicked {
+  background-color: blue;
+  color: white;
+}
