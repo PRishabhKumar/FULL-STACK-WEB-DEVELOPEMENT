@@ -206,5 +206,47 @@ console.log(
 // ADDING ELEMENTS USING DOM
 
 // We can also add some elements using DOM
-// There are seeral methos to do that
-// 1)
+// There are several methods to do that
+// First of all, we create a new element using the createElement() method and then add them whereever we want
+// These are the methods used for the insertion of elements in a page :
+// 1) appendChild() --> This is used to insert the element as a child of the element specified
+// 2) append() -> This simply appends not only elements, but also text
+// 3) prepend() --> This is used to add the element in the begining of another element
+// 4) insertAdjacent() --> This is used to add the element adjacent to another element in 4 possible ways :
+//    (I) beforeBegin --> It is used to append the element just at the begining of the specified element
+//    (II) afterBegin --> It is used to append the element just after the begining of the specified element i.e. as its first child
+//    (III) beforeend --> This adds the element just before the ending of the element, i.e. as its last child
+//    (iv) afterend --> This adds the element just after the speficided element has ended...
+
+let newPara = document.createElement("p");
+newPara.innerText = "This is a sample paragraph....";
+parent = document.querySelector(".parent");
+parent.appendChild(newPara);
+
+let newChildPara = document.createElement("p");
+newChildPara.innerText = "This is a sample para for the child div";
+let child = document.querySelector(".child");
+child.appendChild(newChildPara);
+
+let newButton = document.createElement("button");
+newButton.innerText = "This is a sample button to test the append() function";
+
+newChildPara.append(newButton);
+newChildPara.append("Never ever click this button in your life...");
+let outerPara = document.querySelector("#outerPara");
+
+let newerButton = document.createElement("button");
+newerButton.innerText =
+  "This is a sample button to test the different ways of insertAdjacentElement() function";
+
+outerPara.insertAdjacentElement("afterend", newerButton);
+
+// we can also remove elements from teh page using teh remove() function
+
+let removableButton = document.createElement("button");
+removableButton.innerText = "This is a removable button";
+
+let removableChild = document.querySelector(".removeChild");
+removableChild.appendChild(removableButton);
+
+removableChild.removeChild(removableButton);
