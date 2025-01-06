@@ -1,0 +1,177 @@
+.box {
+  height: 400px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outer {
+  margin-left: 0;
+  height: 25px;
+  width: 100px;
+  border: 2px solid black;
+}
+
+.inner {
+  height: inherit;
+  width: 20px;
+  border-right: 2px solid black;
+}
+
+.dark {
+  background-color: black;
+}
+
+.light {
+  background-color: white;
+}
+
+.violetLight {
+  background-color: darkviolet;
+}
+
+.indigoLight {
+  background-color: indigo;
+}
+
+.blueLight {
+  background-color: blue;
+}
+
+.greenLight {
+  background-color: green;
+}
+
+.yellowLight {
+  background-color: yellow;
+}
+
+.orangeLight {
+  background-color: orange;
+}
+
+.redLight {
+  background-color: red;
+}
+
+/* DARK MODE */
+
+.violetDark {
+  background-color: rgb(128, 0, 128);
+}
+
+.indigoDark {
+  background-color: rgb(75, 0, 130);
+}
+
+.blueDark {
+  background-color: rgb(0, 0, 128);
+}
+
+.greenDark {
+  background-color: rgb(34, 139, 34);
+}
+
+.yellowDark {
+  background-color: rgb(204, 153, 0);
+}
+
+.orangeDark {
+  background-color: rgb(153, 76, 0);
+}
+
+.redDark {
+  background-color: rgb(128, 0, 0);
+}
+
+.violet {
+  height: 200px;
+  width: 200px;
+}
+
+.indigo {
+  height: 200px;
+  width: 200px;
+}
+
+.blue {
+  height: 200px;
+  width: 200px;
+}
+
+.green {
+  height: 200px;
+  width: 200px;
+}
+
+.yellow {
+  height: 200px;
+  width: 200px;
+}
+
+.orange {
+  height: 200px;
+  width: 200px;
+}
+
+.red {
+  height: 200px;
+  width: 200px;
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.setBorderWhite {
+  border: 2px solid white;
+}
+
+.setBorderBlack {
+  border: 2px solid black;
+}
+
+.reverseMarginDirection {
+  margin-right: 0;
+}
+
+.restoreMarginDirection {
+  margin-left: 0;
+}
+
+.buttonDiv {
+  height: 200px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.glowButton {
+  background-color: royalblue;
+  color: white;
+}
+
+.glowEffect {
+  body {
+    background-color: black;
+  }
+  background-color: aqua;
+  color: black;
+  box-shadow: 0px 0px 10px 5px white;
+  transition: background-color 10s ease-in-out, color 10s ease-in-out,
+    box-shadow 10s ease-in-out;
+}
+
+.makeBackgroundBlack {
+  background-color: black;
+  transition: background-color 10s ease-in-out;
+}
+
+.makeBackgroundWhite {
+  background-color: white;
+  transition: background-color 10s ease-in-out;
+}

@@ -1,3 +1,7 @@
+body {
+  background-color: black;
+}
+
 .box {
   display: flex;
   flex-direction: column;
@@ -9,4 +13,22 @@
   height: 100px;
   width: 400px;
   border: 2px solid black;
+}
+
+.btn {
+  background-color: aqua;
+  color: black;
+}
+
+.btnChangeColor {
+  font-weight: bolder;
+  font-size: larger;
+  background-color: royalblue;
+  color: white;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.8);
+}
+
+.changeColourBack {
+  background-color: aqua;
+  color: black;
 }
