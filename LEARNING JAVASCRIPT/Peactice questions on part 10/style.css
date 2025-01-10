@@ -1,0 +1,30 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testMouseOut {
+  height: 300px;
+  width: 300px;
+  border: 5px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.onMouseIn {
+  font-weight: bolder;
+  background-color: aqua;
+  transform: scale(1.5);
+  transition: background-color 1s ease-in-out, font-weight 1s ease-in-out,
+    transform 1s ease-in-out;
+}
+
+.onMouseOut {
+  font-weight: normal;
+  transform: scale(0.667);
+  transition: font-weight 1s ease-in-out, transform 1s ease-in-out;
+}
