@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Advanced JavaScript</h1>
+    <h1>Call Stack in JS</h1>
+    <p>
+      Call stack in JS is basically a data structure which stored information
+      about function class made through JS. Every time a new function call is
+      made, it get added into the stack and once the function execution is over,
+      it gets removed from the stack
+    </p>
+    <p>
+      For example if we have a function called one() which simply returns '1',
+      and we have two other functions as two() and three() which return '2' and
+      '3' repectively but not directly. The function tow() makes two calls to
+      the one() function and returns the result of addition of the function
+      calls. Similarly, the function three, makes a call to the functions two()
+      and one() and adds their resluts to return 3.
+    </p>
+    <p>
+      Here when we call the function two(), it gets added in the call stack and
+      the control goes inside the two() function. here when the one() function
+      is called twice, first one instance of one() gets added in the stack but
+      since it simplyt returns 1, its execution takes negligible time and hence
+      the instance is almost instantly removed from the stack as well. Same
+      process is repeated for the second call to one().
+    </p>
+    <p>
+      After this, the execution of the controls moves back to the two() function
+      and since all the work to be done by this function is also over, the
+      execution comes to an end and the call to two() which was initially pushed
+      into the stack is also removed, making the stack empty
+    </p>
+    <br /><br /><br />
+    <p>
+      Similarly when the three() function is called, it is added to the stack
+      and the cont\rol transfers to the three() function wihhc in turn has a
+      function call first to two() and then to one(). So first, the call is made
+      to the two() function which is added to the stack. Once the control
+      reaches inside the two() function, it encounters two calls to one() which
+      are also added to the stack and the same process is repeated as mentioned
+      above. Once the execution of both the one() functions and the two()
+      function comes to an end, they are removed from the stack and the control
+      is again transfered to three(). Here again a call to one() is encountered
+      and hence it is added to the stack and the control goes there. ONce the
+      execution of the one() function is over, it is removed from the stack. Now
+      the control comes back to three() and after returing the value, the
+      exeuction of three() is also over and hence it is also removed from the
+      stack, making the stack empty again.
+    </p>
+    <h1>Single-threaded nature of JS and how browser helps overcome it</h1>
+    <p>
+      Programming languages are either single-threaded or multi-threaded. Single
+      threaded languages are those that can execute only one command at a time
+      whereas multi-threaded languages can execute multiple instructions at the
+      same time.
+    </p>
+    <p>
+      JS is a single-threaded language. Therefore if you give 6 lines of code
+      where you are delcaring a varaible, printing it, doing the same for
+      another varaible, then calculating the sum of the two varaibles and then
+      prinitng it, each and every instruction will be executed one-by-one with a
+      certain delay, which we are not able to visualize because it is very small
+    </p>
+    <p>
+      Suppose, we give a code where we are passing a function called hello()
+      inside the setTimeout() function and giving the delay as 2s and after
+      that, we are giving another normal console.log() printing your name, we
+      will see that upon running the code, your name appears instantly and after
+      2seconds teh hello gets printed. If JS is a single-threaded language then
+      how is it able to execute another instruction before the completion of the
+      previous one ?? Ideally, JS should wait for 2 seconds, then print the
+      hello and then your name but so is not the case.
+    </p>
+    <p>
+      The one that helps JS overcome the limitations dur to it's single-threaded
+      nature is the browser. Web browsers are generally coded in multi-threaded
+      languages like C++ or Java. So when such a situation is encountered, the
+      browser takes the hello() function (which is passed as callback in the
+      setTimeout() function) and stores it within itself so there does not exist
+      a function called hello() for JS so it executed the next statement that
+      prints the name and after 2 seconds, the browser returns the hello()
+      function back to JS and adds it in its call stack and hence the function
+      now exists for JS and it executes it.
+    </p>
+    <p>
+      There are two types of natures of programming languages i.e. synchronous
+      and asynchronous. Synchronous is when each and every line executes one
+      after the other in order. Asynchronous is when this does not happen.
+      Although along with a single-threadedness, JS is also synchrnous in nature
+      but in many cases it behaves asynchronously which is very important to
+      know about.
+    </p>
+    <h1 id="ayncJS">Asynchronous nature of JS</h1>
+    <p>
+      Suppose we create a function in JS where we are accessing a heading and
+      changing its colour using JS. Here, if we want to change the colour of the
+      heading after a specific time say 2s to any colour say orange, and we want
+      to colour to change to red after 2s of the colour changing to orange, then
+      we can create a function which accepts 2 parameters i.e. the desired
+      colour and the delay after which the colour is to be changed and we can
+      create a simple setTimeout() function to change the colour after the given
+      delay. Now if we give the initial delay as 2s and we want the colour to
+      change to red 2s after the colour was changed to orange, we will have to
+      call the function again this time with the colour 'red' and the delay as
+      4s (2+2) and this can go on. Suppose we want to keep changing the colour
+      for 1000 times each time with a different colour and 2s after the last
+      colour change was made, then it is not a very ideal appraoch to call the
+      function 1000 times each time calculating the new delay to be passed to
+      the function. To solve this, we can also add a parameter say nextColor, in
+      the changeColour() function which will basically accept a function which
+      instructs the next colour change. Now to implement this, we can call the
+      function for the first time like changeColour("orange", 2000,
+      ()=>{changColour("red", 2000)}).
+    </p>
+    <p>
+      Here the function passed to the nextColor formal parameter is nothing but
+      another call function to the same changeColour() function but this time
+      with a new colour and delay of 2s, so in the main changeColour() function,
+      this entire code of changing the colour and executing the funciton passed
+      to nextColor happens after the given delay (here 2s) and hence when we
+      pass another call of the same function again with a delay of 2s and a
+      different colour, then the colour change to red will happend after
+      2000+2000 = 4000ms i.e. 4s. This is how we can chain function calls to
+      achieve the desired objective. However this approach looks very confusing
+      to someone who views the code for the first time and hence is not very
+      recommended although such callbacks are actually found in industrial
+      websites as well. To solve this issue, we use the concept of promises and
+      async and await keywords.
+    </p>
+    <h2>Promises in JS</h2>
+    <p>
+      Promise is actually an object in JS which has its success and failure
+      cases.
+    </p>
+    <p>
+      Suppose we are writing a function in JS to store a data in the database.
+      Now the completion of this work depends on lets say the internet speed
+      which is a random varaible defined by us here and we will set the cases
+      when the operation will be successfully completed and when it will fail.
+      Now if we follow the same method of chaining callbacks as in the case of
+      changing the colour of the heading then it becomes very confusing to
+      comprehend as well as to debug the code. For this, we use promises and
+      more information on this is given in app.js
+    </p>
+    <h2>Async functions</h2>
+    <p>
+      Async functions are spefical types of functions which by default return a
+      promise even when we dont explicitly write the return keyword. Any normal
+      function can be converted to an async function by writing the 'async'
+      keyword before the 'function' keyword.
+    </p>
+    <p>
+      Next we have another very important keyword i.e. the await keyword which
+      is basically used to wait till the current async function call is
+      completed before going to the next function call.
+    </p>
+    <p class="note">
+      <i
+        ><u
+          >Note: The await leyword can only be used inside an async function</u
+        ></i
+      >
+    </p>
+    <script src="app.js"></script>
+  </body>
+</html>

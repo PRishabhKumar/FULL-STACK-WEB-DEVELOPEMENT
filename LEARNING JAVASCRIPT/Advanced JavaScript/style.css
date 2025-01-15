@@ -1,0 +1,15 @@
+p {
+  font-weight: bold;
+  font-size: larger;
+  text-align: center;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.note {
+  font-weight: bolder;
+  font-size: larger;
+}
