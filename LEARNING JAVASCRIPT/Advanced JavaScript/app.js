@@ -240,3 +240,73 @@ async function changeColourDemo() {
     "This operation is intended to be performed after the execution of the function calls !!!"
   );
 }
+
+// NOW WE WILL SEE HOW TO KAKE API CALLS USING THE CONCEPTS OF ASYNC JS AND PROMISES LEARNT BEFORE
+
+// Here, we will be using a random cat fact API  that siply returns a new and random fact about cats every time a GET request is made to the URL
+
+let url = "https://catfact.ninja/fact";
+
+// To make a reuqest to an API, the fetch() method is used that returns a promise
+
+fetch(url) //This returns a promise
+  .then((res1) => {
+    return res1.json(); //This again  returns a promise !!
+  })
+  .then((data) => {
+    console.log(`Fact number 1 : ${data.fact}`);
+    fetch(url)
+      .then((res2) => {
+        return res2.json();
+      })
+      .then((data2) => {
+        console.log(`Fact number 2 : ${data2.fact}`);
+        fetch(url)
+          .then((res3) => {
+            return res3.json();
+          })
+          .then((data3) => {
+            console.log(`Fact number 3 : ${data3.fact}`);
+          });
+      });
+  })
+  .catch((err) => {
+    console.log("Some error occured : ", err);
+  });
+
+// The above code demonstrates the use of fetch() method to make API calls and also how nested API calls can be made using the fact that the fetch() method returns a promise and the concept of promise chaining.
+
+// Now we will see the use of async and await to make similar nested API calls
+
+console.log(
+  "The three fact from here onwards are being fetched using async and await keywords !!!"
+);
+
+function callAPI() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      fetch(url)
+        .then((res) => {
+          return res.json();
+        })
+        .then((data) => {
+          console.log(` A random fact about cats is : ${data.fact}`);
+          resolve("API call was successful !!");
+        })
+        .catch((err) => {
+          console.log(`Some error occured : ${err}`);
+          reject(
+            "The API call could not be made because either the reuqest you made was incorrect or it was rejected by the server !!!"
+          );
+        });
+    }, 1000);
+  });
+}
+
+async function makeAPICall() {
+  await callAPI();
+  await callAPI();
+  await callAPI();
+}
+
+makeAPICall();

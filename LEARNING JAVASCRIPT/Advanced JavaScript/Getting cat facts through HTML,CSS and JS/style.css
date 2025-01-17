@@ -1,0 +1,16 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+button {
+  text-align: center;
+  font-size: larger;
+  font-weight: bolder;
+}
