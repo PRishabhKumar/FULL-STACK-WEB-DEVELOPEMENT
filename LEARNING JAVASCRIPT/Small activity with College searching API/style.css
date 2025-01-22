@@ -1,0 +1,30 @@
+body {
+  /* background-image: url("https://c0.wallpaperflare.com/preview/416/179/610/kings-college-cambridge-uk-university.jpg");
+  background-size: cover; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 70px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container input{
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.submit{
+  font-weight: bolder;
+  font-size: larger;
+}
+
+
