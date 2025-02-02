@@ -1,0 +1,28 @@
+Basic commands : 
+(i) ls --> shows the list of files in the directory 
+(ii) pwd --> print working directory 
+(iii) clear --> clears the terminal
+(iv) cd .. --> This is the back button in the command line and takes you one step backwards in the currecnt directory
+(v)  mkdir --> This creates a new directory or folder in the current directory with the name specified 
+               Syntax : mkdir NewFolderName (make sure to navigate to the directory where this new folder is to be created before executing this command or else the new folder will be created in the rot directory)
+
+
+
+Flags :    
+
+(i) man --> This stands for manual command which gives the instruction manual i.e. how the given command works and this gives the details manuual for the specified command
+
+(ii) -l --> This prints the list of files in detailed format when used with ls command i.e. when you write ls -l and the additional detailes include date modified and so on...
+
+(iii) -a --> This prints all the files in the current directory whose names begin with a dot i.e. '.'. This gives us access to many internal files in the system which otherwise is not visible to us as a normal user. 
+
+
+Creating a file : 
+
+touch -> Creates a new file of the specific type in the specified directory when a correct extension is given after the name of the file. 
+
+Deleting files or folders : 
+
+(i) rm --> removes the file with the name specified.
+(ii) rmdir --> removes the folder we are currently in (it can remove only empty folders)
+(iii) rm-rf --> removes even non-empty folders 

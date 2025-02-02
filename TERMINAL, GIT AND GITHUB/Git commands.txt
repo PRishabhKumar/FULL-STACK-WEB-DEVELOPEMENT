@@ -1,0 +1,20 @@
+1) git config --global user.name "Your name" --> Sets the name from which all the commits will be made
+
+2) git config --global user.email "Yuor email ID" --> Sets the emaid ID from/through which all the commits would be made
+
+
+**Note : We are using global here as we want the same name and email to be used everywhere. But we also have other options like local, sytstem which basically defines the scope where the given name and email ID will be used
+
+3) git clone "url of the repository to be cloned" --> This creates a copy of the specified repository in the folder that is currently opened in the terminal i.e. the current working directory. 
+
+4) git status --> Gets the status of the project. 
+   There are many statuses of a file as : 
+   (i) untracked--> This means that the file has been newly created and that git is currently not tracking the changes being made to that file
+   (ii) unmodified --> This means there have been no changes in this file or folder since the last commit. 
+   (iii) modified --> This means that after the last commit, some changes have been made in the files.
+   (iv) staged --> The files have been added to the staging area by using the command git add but they have not yet been committed 
+5) git add --> This adds the file name given to the staging area of git i.e. the changes are now ready to be commited.
+** To add all the files in the folder to the staging area, we can use a '.' like git add .
+
+6) git commit -m "commit message" --> This commits all the changes that have been made to this folder to github. Note that the commit message is mandatory for the files to be commited, else the terminal gives and error.
+
