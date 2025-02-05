@@ -18,3 +18,58 @@
 
 6) git commit -m "commit message" --> This commits all the changes that have been made to this folder to github. Note that the commit message is mandatory for the files to be commited, else the terminal gives and error.
 
+7) git push --> This is used to push all the commits made to the local machine to github. 
+   Syntax : git push origin main --> Now here origin refere to the url that we had copied from github to clone the repo that is the origin and main here refers to the branch to which we want to commit (we can have the namaes of other branches as well if we have them in our project)
+
+
+
+COMMANDS TO PUSH A FOLDER/PROJECT TO GITHUB FROM SCRATCH USING THE terminal
+
+Step 1: Create a repository on github.
+Step 2: Write these commands in the command line in order : 
+        (i) git init --> This initializes a local repository on local machine
+        (ii) git remote add origin <link> --> This adds a new origin for files to be stored to and fetched from in this repo
+        (iii) git remote -v --> This is used to verify the creation of the remote
+        (iv) git branch -M main --> This is used to rename the branch (here we are renaming to main but any other name can also be used)
+        (v) git push origin main --> This is used to push the content to github (make sure to run all the commands for adding the files to staging area and so on before running this command)
+        ** For the first time if we write git push -u origin main, this basically means that we are setting the origin and if you write this for the first time, then after that whenever you need to push something, we can simply write git push
+        ** We can also write git commit -am "commit message" to add all the files and commit them at the same time using a single command
+
+BRANCHES IN GIT AND GITHUB : 
+
+1) git branch --> Used to check a branch
+
+2) git branch -M main --> This renames the branch to main
+
+3) git checkout <branch name> --> Used to navigate to a particular branch
+
+4) git checkout -b <name of the new branch> --> Used to create a new branch with a specific name
+
+5) git -d <name of the branch> --> Used to delete the branch 
+
+6) git push set-upstream <name of the branch> --> Used to push the changes made in the specific branch
+
+7) Merging code : 
+      Method 1 (Using git) : 
+         (i) git diff <branch name> --> Compares the currently visited branch to the specified branch to check for the differences
+         (ii) git merge <branch name> --> Merges the code of the current branch and the specified branch
+      Method 2 (Using Pull Requests (PR)) --> This is done on the GitHub website only
+
+   ** After merging the pull requests on github we will wont see thhose changes in our localc system and to get those changes to be reflected in our local system, we need to exeecute the following command : 
+   git pull origin main --> This pulls the structure of the main branch and it reflects in our local system as well       
+
+COMMANDS TO FIX SOME MISTAKES 
+
+1) git reset <file name> --> This is used in cases where we have stages some changes but later realize that they are not needed and hence should not be pushed or committed so in that case we can use this command to reset the staging changes that we had made eariler. We can simply write git reset to reset all the changes in all the files that we have staged. 
+
+2) git reset HEAD~1 --> This is used in the case of commited changes and it works for one commit only. HEAD points to the last commit made and this command shift the position of head to the previous commit. 
+
+3) git reset <commit hash> --> This is used to jump the position of HEAD to some other commit i.e. when multiple incorrect commits are made. Here we can get the commit hash for each and every commit through the command git log which gives the detials of all the commits made. Upon execution of the command with a specific commit hash, we can reset the position of HEAD to the desired previous commit
+
+4) git reset --hard <commit hash> --> If after moving the position of the HEAD to a specific commit hash, we dont want any changes made after that commit to be visible to us, then we can use this command
+
+
+
+FORKING : 
+
+Suppose we are working on a project and we have our repository, and now we want the entire code of another repository (3rd party) to which we dont have edit access as we are not a part of it, then we can use the form option in GitHub. This creates a copy of the repository selected as a new repo in our account and now for our account and our projects, we can make changes to that copy of the repo. 
