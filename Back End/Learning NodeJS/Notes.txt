@@ -1,0 +1,33 @@
+(i) NodeJS is a runtime environment for JS
+(ii) ** IT IS NOT A LANGUAGE OR FRAMEWORK OR LIBRARY**
+(iii) Very popular server-side scripting language
+
+REPL --> Read Evaluate Print Loop
+
+(iv) Just like we have the window object in the browser, where all the properties and functions related to all the elemetns of the HTML page are listed, here in nodeJS, we have the "global" object 
+
+(v) ".help" gives us a list of small yet commands and thier use cases as follows : 
+        1) .break --> Sometimes when we are stuck while executing some process, this commands take us out of IT
+        2) .clear --> Similiar to .break (alias)
+        3) .editor --> Enter into the editor mode
+        4) .exit --> Exit from the REPL
+        5) .load --> Load the JS contents from a file ino the curent REPL session
+        6) .save --> Saves all the evaluated commands in the current session to a file.
+
+
+(vi) process object --> It gives us the information about and the control over the process that is currently being executed. 
+
+(vii) process.argv --> Returns the command line arguments that were passed when node was launched. 
+                       If we simply print the value of process.argv, then we will see that it contains 2 parameters by default i.e. one is the installation path for node and the other is the path of the current working file. To give parameters to process object, we can use the following syntax in the command line : node app.js hello how are you
+                       This line will pass 4 arguments as the 4 words wirtten after the execution line and they can be viewed by printing the value of the process.argv object.
+                       While using the JS file in the code editor, we can manipulate the parameters as we want. An exmaple of this is shown in the app.js file. Note that the parameters are always passed through the command line. 
+
+
+(viii) module.exports --> This is a special pbject that is used to transfer some information from one file to another. The file sending the information has the module.exports objects called at the end of the file with the necessary information to be shared and the file where the information is to be recieved uses the 'require' keyowrd that takes the path of the file that exports the information to access the information. More details are given in the app.js file.
+
+
+(ix) --> We can also export information from other folders and use it in some other folder. This is how we do it : 
+        (i) Create a new folders and create the necessary files that are to be exported and export them all.
+        (ii) Create a new special file with the name "index.js" (note that the name should not be changed) and require all the files there and store them in an array.
+        (iii) Export the array from the index.js file and we can now require all the files in another folder. (The index.js is a special file name and is reserved for this purpose and hence the name of this file cannot be user-defined )
+
